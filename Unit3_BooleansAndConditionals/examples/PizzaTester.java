@@ -17,6 +17,7 @@ public class PizzaTester {
             System.out.println("Pizza1 and Pizza2 are from the same store");
         } else {
             System.out.println("Pizza and Pizza2 are from different stores");
+            // Leo's bad
         }
 
     }
