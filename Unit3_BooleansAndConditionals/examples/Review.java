@@ -1,6 +1,7 @@
 package Unit3_BooleansAndConditionals.homework;
 
 public class Review {
+    // Instance variables
     private String reviewerName, businessName;
     private int rating;
 
