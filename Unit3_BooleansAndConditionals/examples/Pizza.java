@@ -69,9 +69,10 @@ public class Pizza {
     }
 
     public boolean equals(Pizza otherPizza){
-        if (store.equals(otherPizza.getStore())){
-            return true;
-        }
-        return false;
+        return (this.inches == otherPizza.inches);
+    }
+
+    public int compareTo(Pizza otherPizza){
+        return this.inches - otherPizza.inches;
     }
 }
