@@ -29,9 +29,9 @@ public class ChevyDriverStudent
         System.out.print("\tLowest price:\t");
 
         // *** COMPLETE THE FOLLOWING DECISION STATEMENTS ***
-        if (_________________________________)
+        if (corvetteClassic.compareTo(corvetteSport) < 0)
             System.out.println("Classic Corvette at $" + corvetteClassic.getPrice());
-        else if (_________________________________)
+        else if (corvetteClassic.compareTo(corvetteSport) > 0)
             System.out.println("Sport Corvette at $" + corvetteSport.getPrice());
         else
             System.out.println("Tie at $" + corvetteClassic.getPrice());
@@ -42,7 +42,7 @@ public class ChevyDriverStudent
         System.out.print("\tStatus:\t");
 
         // *** COMPLETE THE FOLLOWING DECISION STATEMENTS ***
-        if (_________________________________)
+        if (corvetteClassic.equals(corvetteSport))
             System.out.println("Same car");
         else
             System.out.println("Not same car");

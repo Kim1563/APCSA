@@ -26,6 +26,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Unit3_BooleansAndConditionals/homework" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kim1563\Documents\GitHub\APCSA\Unit3_BooleansAndConditionals\homework" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.StudentDriver">
     <configuration name="CompoundBooleanExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
