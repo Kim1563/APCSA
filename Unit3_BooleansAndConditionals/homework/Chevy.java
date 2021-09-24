@@ -4,7 +4,7 @@ public class Chevy {
     private int year;
     private int mileage;
     private double fuelEfficiency;
-    private int price;
+    private double price;
     private String model;
     private String color;
     private boolean luxury;
@@ -21,7 +21,7 @@ public class Chevy {
         this.year = 2021;
         this.mileage = 0;
         this.fuelEfficiency = 35;
-        this.price = 16000;
+        this.price = 16000.00;
         this.model = "Trax";
         this.color = "White";
         this.luxury = false;
@@ -29,7 +29,7 @@ public class Chevy {
         this.sport = false;
     }
 
-    public Chevy(int year, int mileage, double fuelEfficiency, int price, String model, String color, boolean luxury, boolean fourWD, boolean sport) {
+    public Chevy(int year, int mileage, double fuelEfficiency, double price, String model, String color, boolean luxury, boolean fourWD, boolean sport) {
         this.year = year;
         this.mileage = mileage;
         this.fuelEfficiency = fuelEfficiency;
@@ -65,11 +65,11 @@ public class Chevy {
         this.fuelEfficiency = fuelEfficiency;
     }
 
-    public int getPrice() {
-        return price;
+    public String getPrice() {
+        return String.valueOf((int)price) + ".00";
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -113,7 +113,7 @@ public class Chevy {
         this.sport = sport;
     }
 
-    public int compareTo(Chevy other){
+    public double compareTo(Chevy other){
         return (price - other.price);
     }
 
@@ -125,37 +125,37 @@ public class Chevy {
                 thisIsNew.equals(otherIsNew);
     }
 
-    public int calcPrice(){
+    public double calcPrice(){
         if (luxury){
-            this.price = (int)(price * 100.0 * LUXRATE) / 100;
+            this.price = price * LUXRATE * 100 / 100d;
         }
         if (fourWD){
             this.price += FOURWDRATE;
         }
         if (sport){
-            this.price = (int)(price * 100.0 * SPORTRATE) / 100;
-            this.fuelEfficiency = (int)(this.fuelEfficiency * 100.0 * SPORTFUEL) / 100;
+            this.price = price * SPORTRATE * 100 / 100d;
+            this.fuelEfficiency = this.fuelEfficiency * 100.0 * SPORTFUEL / 100;
         }
-        return (int)(price * 100.0 * TAX) / 100;
+        return price * TAX * 100 / 100d;
     }
 
     public String toString(){
-        String returnString = this.year + MAKE + this.model + "(" + this.color + ")";
-        returnString += "\tPRICE:\t\t$" + this.price;
-        returnString += "\tMILES:\t\t" + this.mileage;
-        returnString += "\tFUEL EFFICIENCY:\t\t" + this.fuelEfficiency + " mpg";
-        returnString += "\tPACKAGES:";
+        String returnString = this.year + " " + MAKE + " " + this.model + " (" + this.color + ")";
+        returnString += "\n\tPRICE:\t\t\t\t$" + this.getPrice();
+        returnString += "\n\tMILES:\t\t\t\t" + this.mileage;
+        returnString += "\n\tFUEL EFFICIENCY:\t" + this.fuelEfficiency + " mpg";
+        returnString += "\n\tPACKAGES:";
         if (luxury){
-            returnString += "\t\t-Luxury Package";
+            returnString += "\n\t\t- Luxury Package";
         }
         if (fourWD){
-            returnString += "\t\t-4WD Package";
+            returnString += "\n\t\t- 4WD Package";
         }
         if (sport){
-            returnString += "\t\t-Sports Package";
+            returnString += "\n\t\t- Sports Package";
         }
         if (!(luxury || fourWD || sport)){
-            returnString += "\t\t-None";
+            returnString += "\n\t\t- None";
         }
         return returnString;
     }

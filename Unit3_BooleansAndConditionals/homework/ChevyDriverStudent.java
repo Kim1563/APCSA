@@ -12,9 +12,12 @@ public class ChevyDriverStudent
 
         // *** UTILIZE SETTER METHODS TO COMPLETE THE FOLLOWING: ***
         // Set traxBase mileage to 15
+        traxBase.setMileage(15);
 
         // Set traxLux mileage to 175 with both a luxury and 4WD package
-
+        traxLux.setMileage(175);
+        traxLux.setLuxury(true);
+        traxLux.setFourWD(true);
 
 
 
@@ -29,6 +32,8 @@ public class ChevyDriverStudent
         System.out.print("\tLowest price:\t");
 
         // *** COMPLETE THE FOLLOWING DECISION STATEMENTS ***
+        corvetteClassic.calcPrice();
+        corvetteSport.calcPrice();
         if (corvetteClassic.compareTo(corvetteSport) < 0)
             System.out.println("Classic Corvette at $" + corvetteClassic.getPrice());
         else if (corvetteClassic.compareTo(corvetteSport) > 0)
