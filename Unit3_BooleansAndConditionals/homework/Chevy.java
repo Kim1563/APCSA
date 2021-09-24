@@ -125,6 +125,20 @@ public class Chevy {
                 thisIsNew.equals(otherIsNew);
     }
 
+    public int calcPrice(){
+        if (luxury){
+            this.price = (int)(price * 100.0 * LUXRATE) / 100;
+        }
+        if (fourWD){
+            this.price += FOURWDRATE;
+        }
+        if (sport){
+            this.price = (int)(price * 100.0 * SPORTRATE) / 100;
+            this.fuelEfficiency = (int)(this.fuelEfficiency * 100.0 * SPORTFUEL) / 100;
+        }
+        return (int)(price * 100.0 * TAX) / 100;
+    }
+
     public String toString(){
         String returnString = this.year + MAKE + this.model + "(" + this.color + ")";
         returnString += "\tPRICE:\t\t$" + this.price;
