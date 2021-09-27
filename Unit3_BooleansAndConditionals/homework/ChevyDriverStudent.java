@@ -19,12 +19,17 @@ public class ChevyDriverStudent
         traxLux.setLuxury(true);
         traxLux.setFourWD(true);
 
-
+        traxBase.calcPrice();
+        traxLux.calcPrice();
+        corvetteSport.calcPrice();
+        corvetteClassic.calcPrice();
 
         // Printouts
         System.out.println("*** VEHICLE PRINTOUTS ***");
         System.out.println(traxBase);
         System.out.println(traxLux);
+        System.out.println(corvetteClassic);
+        System.out.println(corvetteSport);
 
         // Display price comparison
         System.out.println("*** COMPARE BY PRICE ***");
@@ -32,8 +37,6 @@ public class ChevyDriverStudent
         System.out.print("\tLowest price:\t");
 
         // *** COMPLETE THE FOLLOWING DECISION STATEMENTS ***
-        corvetteClassic.calcPrice();
-        corvetteSport.calcPrice();
         if (corvetteClassic.compareTo(corvetteSport) < 0)
             System.out.println("Classic Corvette at $" + corvetteClassic.getPrice());
         else if (corvetteClassic.compareTo(corvetteSport) > 0)
@@ -47,7 +50,7 @@ public class ChevyDriverStudent
         System.out.print("\tStatus:\t");
 
         // *** COMPLETE THE FOLLOWING DECISION STATEMENTS ***
-        if (corvetteClassic.equals(corvetteSport))
+        if (traxBase.equals(traxLux))
             System.out.println("Same car");
         else
             System.out.println("Not same car");

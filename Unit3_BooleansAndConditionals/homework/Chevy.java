@@ -1,6 +1,7 @@
 package Unit3_BooleansAndConditionals.homework;
 
 public class Chevy {
+    // Private instance variables
     private int year;
     private int mileage;
     private double fuelEfficiency;
@@ -12,11 +13,12 @@ public class Chevy {
     private boolean sport;
     private final String MAKE = "Chevrolet";
     private final double TAX = 1.122;
-    private final double LUXRATE = 1.2;
+    private final double LUXRATE = 0.2;
     private final int FOURWDRATE = 3500;
-    private final double SPORTRATE = 1.15;
+    private final double SPORTRATE = 0.15;
     private final double SPORTFUEL = 0.8;
 
+    // Default constructor
     public Chevy(){
         this.year = 2021;
         this.mileage = 0;
@@ -29,6 +31,7 @@ public class Chevy {
         this.sport = false;
     }
 
+    // Full constructor
     public Chevy(int year, int mileage, double fuelEfficiency, double price, String model, String color, boolean luxury, boolean fourWD, boolean sport) {
         this.year = year;
         this.mileage = mileage;
@@ -41,6 +44,7 @@ public class Chevy {
         this.sport = sport;
     }
 
+    // Getters and setters for every variable
     public int getYear() {
         return year;
     }
@@ -113,10 +117,14 @@ public class Chevy {
         this.sport = sport;
     }
 
+
+    // compareTo method returns a double that shows the comparison between this Chevy and other Chevy:
+    // negative if less, zero if equal, positive if more
     public double compareTo(Chevy other){
         return (price - other.price);
     }
 
+    // equals method returns true if and only if models, colors, and used status based on mileage are equal
     public boolean equals(Chevy other){
         Boolean thisIsNew = this.mileage < 200;
         Boolean otherIsNew = other.mileage < 200;
@@ -125,20 +133,23 @@ public class Chevy {
                 thisIsNew.equals(otherIsNew);
     }
 
+    // calcPrice method adds on packages based on original price and returns final price + tax
     public double calcPrice(){
+        double originalPrice = this.price;
         if (luxury){
-            this.price = price * LUXRATE * 100 / 100d;
+            this.price += originalPrice * LUXRATE;
         }
         if (fourWD){
             this.price += FOURWDRATE;
         }
         if (sport){
-            this.price = price * SPORTRATE * 100 / 100d;
-            this.fuelEfficiency = this.fuelEfficiency * 100.0 * SPORTFUEL / 100;
+            this.price += originalPrice * SPORTRATE;
+            this.fuelEfficiency *= SPORTFUEL;
         }
-        return price * TAX * 100 / 100d;
+        return this.price * TAX;
     }
 
+    // toString method returns a formatted string that displays the instance variables and packages
     public String toString(){
         String returnString = this.year + " " + MAKE + " " + this.model + " (" + this.color + ")";
         returnString += "\n\tPRICE:\t\t\t\t$" + this.getPrice();
@@ -157,7 +168,7 @@ public class Chevy {
         if (!(luxury || fourWD || sport)){
             returnString += "\n\t\t- None";
         }
-        return returnString;
+        return returnString + "\n";
     }
 
 }
