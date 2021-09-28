@@ -1,4 +1,4 @@
-package Unit3_BooleansAndConditionals.homework;
+package Unit3_BooleansAndConditionals.examples;
 
 public class Review {
     private String reviewerName, businessName;

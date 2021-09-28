@@ -1,5 +1,7 @@
 package Unit3_BooleansAndConditionals.homework;
 
+import Unit3_BooleansAndConditionals.examples.Review;
+
 public class ReviewTester {
     public static void main(String[] args) {
         Review kg = new Review("Ken Goettsche", "Olive Garden", 1);
