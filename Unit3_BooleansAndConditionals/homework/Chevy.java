@@ -1,6 +1,8 @@
 package Unit3_BooleansAndConditionals.homework;
-
+import java.text.DecimalFormat;
 public class Chevy {
+    DecimalFormat f = new DecimalFormat("##.00");
+
     // Private instance variables
     private int year;
     private int mileage;
@@ -11,12 +13,12 @@ public class Chevy {
     private boolean luxury;
     private boolean fourWD;
     private boolean sport;
-    private final String MAKE = "Chevrolet";
-    private final double TAX = 1.122;
-    private final double LUXRATE = 0.2;
-    private final int FOURWDRATE = 3500;
-    private final double SPORTRATE = 0.15;
-    private final double SPORTFUEL = 0.8;
+    private static final String MAKE = "Chevrolet";
+    private static final double TAX = 1.122;
+    private static final double LUX_RATE = 0.2;
+    private static final int FOUR_WD_RATE = 3500;
+    private static final double SPORT_RATE = 0.15;
+    private static final double SPORT_FUEL = 0.8;
 
     // Default constructor
     public Chevy(){
@@ -69,8 +71,8 @@ public class Chevy {
         this.fuelEfficiency = fuelEfficiency;
     }
 
-    public String getPrice() {
-        return String.valueOf((int)price) + ".00";
+    public double getPrice() {
+        return price;
     }
 
     public void setPrice(double price) {
@@ -137,14 +139,14 @@ public class Chevy {
     public double calcPrice(){
         double originalPrice = this.price;
         if (luxury){
-            this.price += originalPrice * LUXRATE;
+            this.price += originalPrice * LUX_RATE;
         }
         if (fourWD){
-            this.price += FOURWDRATE;
+            this.price += FOUR_WD_RATE;
         }
         if (sport){
-            this.price += originalPrice * SPORTRATE;
-            this.fuelEfficiency *= SPORTFUEL;
+            this.price += originalPrice * SPORT_RATE;
+            this.fuelEfficiency *= SPORT_FUEL;
         }
         return this.price * TAX;
     }
@@ -152,7 +154,7 @@ public class Chevy {
     // toString method returns a formatted string that displays the instance variables and packages
     public String toString(){
         String returnString = this.year + " " + MAKE + " " + this.model + " (" + this.color + ")";
-        returnString += "\n\tPRICE:\t\t\t\t$" + this.getPrice();
+        returnString += "\n\tPRICE:\t\t\t\t$" + f.format(this.calcPrice());
         returnString += "\n\tMILES:\t\t\t\t" + this.mileage;
         returnString += "\n\tFUEL EFFICIENCY:\t" + this.fuelEfficiency + " mpg";
         returnString += "\n\tPACKAGES:";

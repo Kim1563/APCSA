@@ -1,10 +1,11 @@
 package Unit3_BooleansAndConditionals.homework;
-
+import java.text.DecimalFormat;
 public class ChevyDriverStudent
 {
     public static void main(String[] args)
     {
         // Create objects
+        DecimalFormat f = new DecimalFormat("##.00");
         Chevy traxBase = new Chevy();
         Chevy traxLux = new Chevy();
         Chevy corvetteSport = new Chevy(2020, 1500, 18.5, 58900, "Corvette (Sport)", "Fire Red", true, false, true);
@@ -18,11 +19,6 @@ public class ChevyDriverStudent
         traxLux.setMileage(175);
         traxLux.setLuxury(true);
         traxLux.setFourWD(true);
-
-        traxBase.calcPrice();
-        traxLux.calcPrice();
-        corvetteSport.calcPrice();
-        corvetteClassic.calcPrice();
 
         // Printouts
         System.out.println("*** VEHICLE PRINTOUTS ***");
@@ -38,11 +34,11 @@ public class ChevyDriverStudent
 
         // *** COMPLETE THE FOLLOWING DECISION STATEMENTS ***
         if (corvetteClassic.compareTo(corvetteSport) < 0)
-            System.out.println("Classic Corvette at $" + corvetteClassic.getPrice());
+            System.out.println("Classic Corvette at $" + f.format(corvetteClassic.getPrice()));
         else if (corvetteClassic.compareTo(corvetteSport) > 0)
-            System.out.println("Sport Corvette at $" + corvetteSport.getPrice());
+            System.out.println("Sport Corvette at $" + f.format(corvetteSport.getPrice()));
         else
-            System.out.println("Tie at $" + corvetteClassic.getPrice());
+            System.out.println("Tie at $" + f.format(corvetteClassic.getPrice()));
 
         // Display equality
         System.out.println("\n*** CHECK EQUALITY ***");
