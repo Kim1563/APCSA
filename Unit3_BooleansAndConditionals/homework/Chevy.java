@@ -122,8 +122,8 @@ public class Chevy {
 
     // compareTo method returns a double that shows the comparison between this Chevy and other Chevy:
     // negative if less, zero if equal, positive if more
-    public double compareTo(Chevy other){
-        return (price - other.price);
+    public int compareTo(Chevy other){
+        return (int)(price - other.price);
     }
 
     // equals method returns true if and only if models, colors, and used status based on mileage are equal

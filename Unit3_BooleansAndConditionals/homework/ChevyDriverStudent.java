@@ -1,7 +1,6 @@
 package Unit3_BooleansAndConditionals.homework;
 import java.text.DecimalFormat;
-public class ChevyDriverStudent
-{
+public class ChevyDriverStudent {
     public static void main(String[] args)
     {
         // Create objects
