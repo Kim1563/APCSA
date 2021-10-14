@@ -21,8 +21,15 @@ public class PigLatin {
             return word + "yay ";
         }
 
-        String firstLetter = word.substring(0, 1);
-        return word.substring(1) + firstLetter + "ay ";
+        String returnWord = "";
+        int index = 0;
+
+        while (!startsWithVowel(word)){
+            returnWord += word.substring(index, index + 1);
+            word = word.substring(index + 1);
+        }
+
+        return word + returnWord + "ay ";
     }
 
 
