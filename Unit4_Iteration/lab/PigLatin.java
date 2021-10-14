@@ -39,6 +39,11 @@ public class PigLatin {
             newPhrase += translateWordToPigLatin(phrase.substring(0, phrase.indexOf(" ")));
             phrase = phrase.substring(phrase.indexOf(" ") + 1);
         }
-        return newPhrase;
+        String lastWord = phrase.substring(phrase.lastIndexOf(" ") + 1);
+        newPhrase = newPhrase + translateWordToPigLatin(lastWord);
+        newPhrase = newPhrase.toLowerCase();
+        String firstChar = newPhrase.substring(0, 1);
+        return firstChar.toUpperCase() + newPhrase.substring(1);
+
     }
 }
