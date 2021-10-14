@@ -37,13 +37,13 @@
       <recent name="C:\Users\kim1563\Documents\GitHub\APCSA\Unit3_BooleansAndConditionals\homework" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StringAlgorithms">
-    <configuration name="ChevyDriverStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit3_BooleansAndConditionals.homework.ChevyDriverStudent" />
+  <component name="RunManager" selected="Application.PigLatinTester">
+    <configuration name="ChallengingLoops_4_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.homework.ChallengingLoops_4_5" />
       <module name="APCSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit3_BooleansAndConditionals.examples.*" />
+          <option name="PATTERN" value="Unit4_Iteration.homework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,6 +77,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PigLatinTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.lab.PigLatinTester" />
+      <module name="APCSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit4_Iteration.lab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StringAlgorithms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.StringAlgorithms" />
       <module name="APCSA" />
@@ -90,26 +103,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WhileLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.WhileLoop" />
-      <module name="APCSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PigLatinTester" />
+        <item itemvalue="Application.ChallengingLoops_4_5" />
         <item itemvalue="Application.StringAlgorithms" />
         <item itemvalue="Application.ForLoop" />
         <item itemvalue="Application.GuessNumber" />
-        <item itemvalue="Application.WhileLoop" />
-        <item itemvalue="Application.ChevyDriverStudent" />
       </list>
     </recent_temporary>
   </component>
@@ -123,5 +123,15 @@
       <updated>1631723998315</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
