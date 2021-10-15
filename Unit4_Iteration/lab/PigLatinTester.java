@@ -10,6 +10,7 @@ public class PigLatinTester {
         translatePhrase(phrase1);
         translatePhrase(phrase2);
         translatePhrase(phrase3);
+
     }
 
     public static void translatePhrase(String phrase) {
