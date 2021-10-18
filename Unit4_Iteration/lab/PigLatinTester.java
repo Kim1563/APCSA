@@ -16,7 +16,7 @@ public class PigLatinTester {
     }
 
     public static void translatePhrase(String phrase) {
-        System.out.println("In English:");
+        System.out.println("In English: ");
         System.out.println("\t" + phrase);
         System.out.println("In Pig Latin: ");
         System.out.println("\t" + PigLatin.toPigLatin(phrase));
