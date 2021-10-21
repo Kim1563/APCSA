@@ -37,7 +37,7 @@
       <recent name="C:\Users\kim1563\Documents\GitHub\APCSA\Unit3_BooleansAndConditionals\homework" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PigLatinTester">
+  <component name="RunManager" selected="Application.Tester">
     <configuration name="ChallengingLoops_4_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.homework.ChallengingLoops_4_5" />
       <module name="APCSA" />
@@ -99,8 +99,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PigLatinTester" />
         <item itemvalue="Application.Tester" />
+        <item itemvalue="Application.PigLatinTester" />
         <item itemvalue="Application.ChallengingLoops_4_5" />
         <item itemvalue="Application.StringAlgorithms" />
         <item itemvalue="Application.ForLoop" />
