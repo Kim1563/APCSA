@@ -2,9 +2,9 @@ public class Tester {
     public static String withoutString(String base, String remove) {
         String newBase = base.toLowerCase();
         String newRemove = remove.toLowerCase();
-
-        while (base.indexOf(newRemove) > 0){
+        while (newBase.indexOf(newRemove) >= 0){
             base = base.substring(0, newBase.indexOf(newRemove)) + base.substring(newBase.indexOf(newRemove) + newRemove.length());
+            newBase = base.toLowerCase();
         }
         return base;
     }
