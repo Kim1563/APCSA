@@ -1,15 +1,12 @@
 public class Tester {
     public static String withoutString(String base, String remove) {
-        String returnStr = "";
         String newBase = base.toLowerCase();
         String newRemove = remove.toLowerCase();
-        for (int i = 0; i < base.length() - remove.length() + 1; i++){
-            String substring = newBase.substring(i, i + remove.length());
-            if (substring.equalsIgnoreCase(newRemove)){
-                returnStr = base.substring(0, i) + base.substring(i + remove.length());
-            }
+
+        while (base.indexOf(newRemove) > 0){
+            base = base.substring(0, newBase.indexOf(newRemove)) + base.substring(newBase.indexOf(newRemove) + newRemove.length());
         }
-        return returnStr;
+        return base;
     }
     public static void main(String[] args) {
         System.out.println(withoutString("Hello there", "llo"));
