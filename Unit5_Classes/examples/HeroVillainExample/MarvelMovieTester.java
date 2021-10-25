@@ -10,5 +10,7 @@ public class MarvelMovieTester {
         System.out.println(power1.toString());
         System.out.println(Hi.toString());
         System.out.println(Bye.toString());
+
+        Hi.getSuperPower().setPowerStrength(100000);
     }
 }
