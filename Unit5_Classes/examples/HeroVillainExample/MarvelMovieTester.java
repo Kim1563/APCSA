@@ -15,5 +15,10 @@ public class MarvelMovieTester {
 
         System.out.println(Hi);
         System.out.println(Bye);
+
+        power1.setPowerStrength(5000);
+
+        System.out.println(Hi);
+        System.out.println(Bye);
     }
 }
