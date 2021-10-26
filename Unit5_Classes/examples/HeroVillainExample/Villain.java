@@ -6,7 +6,7 @@ public class Villain {
 
     public Villain(String villainName, Power superPower) {
         this.villainName = villainName;
-        this.superPower = superPower;
+        this.superPower = new Power (superPower.getPowerName(), superPower.getPowerStrength());
     }
 
     public String getVillainName() {
