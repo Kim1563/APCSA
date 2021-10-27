@@ -2,9 +2,9 @@ package Unit5_Classes.examples.HeroVillainExample;
 
 public class Power {
     private String powerName;
-    private int powerStrength;
+    private double powerStrength;
 
-    public Power(String powerName, int powerStrength) {
+    public Power(String powerName, double powerStrength) {
         this.powerName = powerName;
         this.powerStrength = powerStrength;
     }
@@ -13,11 +13,11 @@ public class Power {
         return powerName;
     }
 
-    public int getPowerStrength() {
+    public double getPowerStrength() {
         return powerStrength;
     }
 
-    public void setPowerStrength(int powerStrength) {
+    public void setPowerStrength(double powerStrength) {
         this.powerStrength = powerStrength;
     }
 
