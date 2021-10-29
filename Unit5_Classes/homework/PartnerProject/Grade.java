@@ -16,5 +16,14 @@ public class Grade {
             this.letterGrade = "A";
         } else if (grade >= 90 && grade < 93){
             this.letterGrade = "A-";
+        } else if (grade >= 88 && grade < 90){
+            this.letterGrade = "B+";
+        } else if (grade >= 83 && grade < 88){
+            this.letterGRade = "B";
+        } else if (grade >= 80 && grade < 83){
+            this.letterGrade = "B-";
+        } else if (grade >= 78 && grade < 80){
+            this.letterGrade = "C+";
         }
+    }
 }
