@@ -43,10 +43,8 @@ public class Parent {
         String changeOption = changeStuff.nextLine();
         if (changeOption.equalsIgnoreCase("Address")){
             studentChange.setAddress(true);
-        } else i (changeOption.equalsIgnoreCase("Parent Phone Number")){
+        } else if (changeOption.equalsIgnoreCase("Parent Phone Number")){
             studentChange.setParentPhoneNumber(true);
-        } else if (changeOption.equalsIgnoreCase("Social Security Number")){
-            studentChange.setSSNumber(true);
         } else {
             System.out.println("That is not an option.");
         }

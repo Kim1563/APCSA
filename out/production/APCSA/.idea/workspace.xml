@@ -31,20 +31,35 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Unit3_BooleansAndConditionals/homework" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Unit5_Classes/homework/PartnerProject" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kim1563\Documents\GitHub\APCSA\Unit5_Classes\homework\PartnerProject" />
       <recent name="C:\Users\kim1563\Documents\GitHub\APCSA\Unit3_BooleansAndConditionals\homework" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MarvelMovieTester">
-    <configuration name="ChallengingLoops_4_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.homework.ChallengingLoops_4_5" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="AdditionPatternTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit5_Classes.homework.FRQs.AdditionPatternTester" />
       <module name="APCSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit4_Iteration.homework.*" />
+          <option name="PATTERN" value="Unit5_Classes.homework.FRQs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit5_Classes.homework.PartnerProject.Main" />
+      <module name="APCSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit5_Classes.homework.PartnerProject.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,19 +93,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringAlgorithms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.StringAlgorithms" />
-      <module name="APCSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tester" />
       <module name="APCSA" />
@@ -100,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.AdditionPatternTester" />
         <item itemvalue="Application.MarvelMovieTester" />
         <item itemvalue="Application.Tester" />
         <item itemvalue="Application.PigLatinTester" />
-        <item itemvalue="Application.ChallengingLoops_4_5" />
-        <item itemvalue="Application.StringAlgorithms" />
       </list>
     </recent_temporary>
   </component>
