@@ -5,6 +5,7 @@ import java.util.*;
 public class Grade {
     private double grade;
     private String letterGrade;
+
     /* Order:
        English,
        Math,
@@ -19,6 +20,11 @@ public class Grade {
         this.letterGrade = getLetterGrade(grade);
     }
 
+    /**
+     * Finds the letter grade given a double grade
+     * @param grade double that represents the grade percentage
+     * @return letter grade String that represents the letter grade earned by the percentage
+     */
     private String getLetterGrade(double grade){
         if (grade >= 98){
             this.letterGrade = "A+";
@@ -57,6 +63,12 @@ public class Grade {
     public String getLetterGrade() {
         return letterGrade;
     }
+
+    /**
+     * Changes a certain grade based on whether account is a teacher account
+     * @param isTeacherViewing If true, allows teacher to edit grade
+     * @param gradeChanged String that describes the subject in which the grade is changed
+     */
     public void setGrade(boolean isTeacherViewing, String gradeChanged){
         if(isTeacherViewing){
             Scanner scanner = new Scanner(System.in);

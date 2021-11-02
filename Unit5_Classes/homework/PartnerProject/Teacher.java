@@ -5,10 +5,15 @@ import java.util.*;
 public class Teacher {
     private String name;
     private ArrayList<Student> myStudents;
+
     public Teacher(String name, ArrayList<Student> myStudents) {
         this.name = name;
         this.myStudents = myStudents;
     }
+
+    /**
+     * For each Student object in myStudents ArrayList, print all grades
+     */
     public void viewGrades(){
         for (int i = 0; i < myStudents.size(); i++) {
             System.out.println(myStudents.get(i).getName() + ":");
@@ -17,6 +22,10 @@ public class Teacher {
         }
         System.out.println('\n');
     }
+
+    /**
+     * For each Student object in myStudents ArrayList, print all info
+     */
     public void viewInfo(){
         for (int i = 0; i < myStudents.size(); i++) {
             System.out.println("Address: " + myStudents.get(i).getAddress());
@@ -24,6 +33,11 @@ public class Teacher {
             System.out.println("Social Security Number: " + myStudents.get(i).getSSNumber() + '\n');
         }
     }
+
+    /**
+     * Changes a grade for a specified Student object in a user-chosen class
+     * @param studentChange Student for which the grade will be changed
+     */
     public void changeGrades(Student studentChange){
         Scanner changeStuff = new Scanner(System.in);
         System.out.println("What grade would you like to change?\nOptions: English, Math, History, Computer Science, Chemistry, PE, Band");
