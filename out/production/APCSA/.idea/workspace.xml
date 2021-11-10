@@ -40,7 +40,7 @@
       <recent name="C:\Users\kim1563\Documents\GitHub\APCSA\Unit3_BooleansAndConditionals\homework" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Tester (1)">
     <configuration name="AdditionPatternTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit5_Classes.homework.FRQs.AdditionPatternTester" />
       <module name="APCSA" />
@@ -80,12 +80,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PigLatinTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.lab.PigLatinTester" />
+    <configuration name="Tester (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit5_Classes.homework.PartnerProject.Tester" />
       <module name="APCSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="Unit5_Classes.homework.PartnerProject.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Tester (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.AdditionPatternTester" />
         <item itemvalue="Application.MarvelMovieTester" />
         <item itemvalue="Application.Tester" />
-        <item itemvalue="Application.PigLatinTester" />
       </list>
     </recent_temporary>
   </component>
@@ -127,6 +127,12 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang">
+            <option name="NOTIFY_CAUGHT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

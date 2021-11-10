@@ -1,6 +1,7 @@
 package Unit5_Classes.examples.HeroVillainExample;
 
 public class MarvelMovieTester {
+    private static double totalStrength = SuperHero.getTotalHeroPower() + Villain.getTotalVillainPower();
     /**
      * battle simulates a battle between hero and villain; whichever has greater
      * strength will win the battle
@@ -8,7 +9,7 @@ public class MarvelMovieTester {
      *      Loser will lose between 5-35% (inclusive) of its OWN strength
      *      If it's a tie, then BOTH parties lose between 5-35% (inclusive)
      *          of their strength
-     *      Print the result of the battle, as wel as their new strength
+     *      Print the result of the battle, as well as their new strength
      *      levels afterwards
      * @param hero
      * @param villain
@@ -17,12 +18,14 @@ public class MarvelMovieTester {
         int randNum = 0;
         if (hero.getSuperPower().getPowerStrength() > villain.getSuperPower().getPowerStrength()){
             // Hero wins
+            System.out.println("Hero wins");
             hero.getSuperPower().setPowerStrength(hero.getSuperPower().getPowerStrength() + 0.1 * villain.getSuperPower().getPowerStrength());
             randNum = (int)(Math.random() * 31) + 5;
             villain.getSuperPower().setPowerStrength(villain.getSuperPower().getPowerStrength() * (1 - randNum / 100.0));
             System.out.println("\nHero's strength: " + hero.getSuperPower().getPowerStrength());
             System.out.println("Villain's strength: " + villain.getSuperPower().getPowerStrength() + "\n");
         } else if (villain.getSuperPower().getPowerStrength() > hero.getSuperPower().getPowerStrength()){
+            System.out.println("Villain wins");
             // Villain wins
             villain.getSuperPower().setPowerStrength(villain.getSuperPower().getPowerStrength() + 0.1 * hero.getSuperPower().getPowerStrength());
             randNum = (int)(Math.random() * 31) + 5;
@@ -30,6 +33,7 @@ public class MarvelMovieTester {
             System.out.println("\nHero's strength: " + hero.getSuperPower().getPowerStrength());
             System.out.println("Villain's strength: " + villain.getSuperPower().getPowerStrength() + "\n");
         } else {
+            System.out.println("Tie");
             // Tie
             randNum = (int)(Math.random() * 31) + 5;
             hero.getSuperPower().setPowerStrength(hero.getSuperPower().getPowerStrength() * (1 - randNum / 100.0));
@@ -77,5 +81,13 @@ public class MarvelMovieTester {
 
         System.out.println(Hi);
         System.out.println(Bye);
+
+        System.out.println("Total strength: " + totalStrength);
     }
+
+    public static double getTotalStrength() {
+        return totalStrength;
+    }
+
+
 }

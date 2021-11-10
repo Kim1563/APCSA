@@ -50,8 +50,10 @@ public class Grade {
             this.letterGrade = "D";
         } else if (grade >= 60 && grade < 63){
             this.letterGrade = "D-";
-        } else {
+        } else if (grade > 50 && grade < 60){
             letterGrade = "F";
+        } else {
+            letterGrade = "Fremd 50";
         }
         return letterGrade;
     }
@@ -75,6 +77,27 @@ public class Grade {
             System.out.println("What do you want to change the " + gradeChanged + " grade to?");
             double newGrade = scanner.nextDouble();
             this.grade = newGrade;
+            this.letterGrade = getLetterGrade(grade);
         }
+    }
+
+    /**
+     * Displays the grading scale
+     */
+    public static void viewScale(){
+        System.out.println("98+ = A+\n" +
+                "93-98 = A\n" +
+                "90-93 = A-\n" +
+                "88-90 = B+\n" +
+                "83-88 = B\n" +
+                "80-83 = B-\n" +
+                "78-80 = C+\n" +
+                "73-78 = C\n" +
+                "70-73 = C-\n" +
+                "68-70 = D+\n" +
+                "63-68 = D\n" +
+                "60-63 = D-\n" +
+                "Anything below - F\n" +
+                "0-50 = Fremd 50");
     }
 }

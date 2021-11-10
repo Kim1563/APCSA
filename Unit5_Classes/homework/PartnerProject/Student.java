@@ -10,6 +10,15 @@ public class Student {
     private String parentPhoneNumber;
     private String SSNumber;
 
+    public Student(){
+        this.name = "";
+        this.gradeLevel = 0;
+        grades = new ArrayList<Grade>();
+        this.address = "";
+        this.parentPhoneNumber = "";
+        this.SSNumber = "";
+    }
+
     public Student(String name, int gradeLevel, String address, String parentPhoneNumber, String SSNumber) {
         this.name = name;
         this.gradeLevel = gradeLevel;
@@ -34,8 +43,16 @@ public class Student {
      */
     public String getGrades() {
         String returnStr = "";
-        for (Grade grade : grades) {
-            returnStr += grade.getGrade() + "\t---\t" + grade.getLetterGrade() + "\n";
+        ArrayList<String> gradeOrder = new ArrayList<String>();
+        gradeOrder.add("English");
+        gradeOrder.add("Math");
+        gradeOrder.add("History");
+        gradeOrder.add("Comp Sci");
+        gradeOrder.add("Chemistry");
+        gradeOrder.add("PE");
+        gradeOrder.add("Band");
+        for (int i = 0; i < grades.size(); i++) {
+            returnStr += gradeOrder.get(i) + "\n  " + grades.get(i).getGrade() + "\t---\t " + grades.get(i).getLetterGrade() + "\n";
         }
         return returnStr;
     }
@@ -86,7 +103,7 @@ public class Student {
         return SSNumber;
     }
 
-    // Dummy classes
+    // Classes for grades
     public void changeEnglish(){
         grades.get(0).setGrade(true, "English");
     }

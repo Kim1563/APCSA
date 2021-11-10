@@ -18,6 +18,7 @@ public class Parent {
     public void viewGrades(){
         for (int i = 0; i < myStudents.size(); i++) {
             String myGrades = myStudents.get(i).getGrades();
+            System.out.println(myStudents.get(i).getName() + ":");
             System.out.println(myGrades);
         }
     }
@@ -27,10 +28,15 @@ public class Parent {
      */
     public void viewInfo(){
         for (int i = 0; i < myStudents.size(); i++) {
+            System.out.println(myStudents.get(i).getName() + ":");
             System.out.println("Address: " + myStudents.get(i).getAddress());
             System.out.println("Parent phone number: " + myStudents.get(i).getParentPhoneNumber());
             System.out.println("Social Security Number: " + myStudents.get(i).getSSNumber() + '\n');
         }
+    }
+
+    public ArrayList<Student> getMyStudents() {
+        return myStudents;
     }
 
     /**
@@ -39,7 +45,7 @@ public class Parent {
      */
     public void changeInfo(Student studentChange){
         Scanner changeStuff = new Scanner(System.in);
-        System.out.println("What would you like to edit?\nOptions: Address, Parent Phone Number, Social Security Number");
+        System.out.println("What would you like to edit?\nOptions: Address, Parent Phone Number");
         String changeOption = changeStuff.nextLine();
         if (changeOption.equalsIgnoreCase("Address")){
             studentChange.setAddress(true);
@@ -48,5 +54,9 @@ public class Parent {
         } else {
             System.out.println("That is not an option.");
         }
+    }
+
+    public String getName() {
+        return name;
     }
 }

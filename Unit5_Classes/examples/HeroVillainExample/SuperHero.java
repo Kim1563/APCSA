@@ -3,8 +3,12 @@ package Unit5_Classes.examples.HeroVillainExample;
 public class SuperHero {
     private String heroName;
     private Power superPower;
+    private static int numHeroes = 0;
+    private static double totalHeroPower = 0.0;
 
     public SuperHero(String heroName, Power superPower) {
+        numHeroes++;
+        totalHeroPower += superPower.getPowerStrength();
         this.heroName = heroName;
         this.superPower = new Power (superPower.getPowerName(), superPower.getPowerStrength());
     }
@@ -25,5 +29,15 @@ public class SuperHero {
         return "\nHero name: " + this.getHeroName() + "\n" + superPower.toString();
     }
 
+    public static int getNumHeroes() {
+        return numHeroes;
+    }
 
+    public static double getTotalHeroPower() {
+        return totalHeroPower;
+    }
+
+    public static double getAverageStrength(){
+        return totalHeroPower / getNumHeroes();
+    }
 }

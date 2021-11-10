@@ -60,4 +60,12 @@ public class Teacher {
             System.out.println("That is not a valid option.");
         }
     }
+
+    public ArrayList<Student> getMyStudents() {
+        return myStudents;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
