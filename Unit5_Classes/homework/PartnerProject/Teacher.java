@@ -29,8 +29,6 @@ public class Teacher {
     public void viewInfo(){
         for (int i = 0; i < myStudents.size(); i++) {
             System.out.println("Address: " + myStudents.get(i).getAddress());
-            System.out.println("Parent phone number: " + myStudents.get(i).getParentPhoneNumber());
-            System.out.println("Social Security Number: " + myStudents.get(i).getSSNumber() + '\n');
         }
     }
 
@@ -67,5 +65,9 @@ public class Teacher {
 
     public String getName() {
         return name;
+    }
+
+    public void setMyStudents(ArrayList<Student> myStudents) {
+        this.myStudents = myStudents;
     }
 }

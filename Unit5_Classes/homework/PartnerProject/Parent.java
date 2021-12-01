@@ -30,8 +30,6 @@ public class Parent {
         for (int i = 0; i < myStudents.size(); i++) {
             System.out.println(myStudents.get(i).getName() + ":");
             System.out.println("Address: " + myStudents.get(i).getAddress());
-            System.out.println("Parent phone number: " + myStudents.get(i).getParentPhoneNumber());
-            System.out.println("Social Security Number: " + myStudents.get(i).getSSNumber() + '\n');
         }
     }
 
@@ -49,13 +47,10 @@ public class Parent {
         String changeOption = changeStuff.nextLine();
         if (changeOption.equalsIgnoreCase("Address")){
             studentChange.setAddress(true);
-        } else if (changeOption.equalsIgnoreCase("Parent Phone Number")){
-            studentChange.setParentPhoneNumber(true);
         } else {
             System.out.println("That is not an option.");
         }
     }
-
     public String getName() {
         return name;
     }

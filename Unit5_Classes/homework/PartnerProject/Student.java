@@ -7,25 +7,28 @@ public class Student {
     private int gradeLevel;
     private ArrayList<Grade> grades;
     private String address;
-    private String parentPhoneNumber;
-    private String SSNumber;
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_BLACK = "\u001B[30m";
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_PURPLE = "\u001B[35m";
+    public static final String ANSI_CYAN = "\u001B[36m";
+    public static final String ANSI_WHITE = "\u001B[37m";
 
     public Student(){
         this.name = "";
         this.gradeLevel = 0;
         grades = new ArrayList<Grade>();
         this.address = "";
-        this.parentPhoneNumber = "";
-        this.SSNumber = "";
     }
 
-    public Student(String name, int gradeLevel, String address, String parentPhoneNumber, String SSNumber) {
+    public Student(String name, int gradeLevel, String address) {
         this.name = name;
         this.gradeLevel = gradeLevel;
         grades = new ArrayList<Grade>();
         this.address = address;
-        this.parentPhoneNumber = parentPhoneNumber;
-        this.SSNumber = SSNumber;
     }
 
     public String getName() {
@@ -78,30 +81,11 @@ public class Student {
         }
     }
 
-    /**
-     * If parent, allows the parent to change the parent phone number
-     * @param isParentViewing Determines whether a parent account is acccessing the student's account
-     */
-    public void setParentPhoneNumber(boolean isParentViewing) {
-        if(isParentViewing){
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("What do you want to change the parent phone number to?");
-            String newPhone = scanner.nextLine();
-            this.parentPhoneNumber = newPhone;
-        }
-    }
 
     public String getAddress() {
         return address;
     }
 
-    public String getParentPhoneNumber() {
-        return parentPhoneNumber;
-    }
-
-    public String getSSNumber() {
-        return SSNumber;
-    }
 
     // Classes for grades
     public void changeEnglish(){

@@ -5,7 +5,15 @@ import java.util.*;
 public class Grade {
     private double grade;
     private String letterGrade;
-
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_BLACK = "\u001B[30m";
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_PURPLE = "\u001B[35m";
+    public static final String ANSI_CYAN = "\u001B[36m";
+    public static final String ANSI_WHITE = "\u001B[37m";
     /* Order:
        English,
        Math,
@@ -58,8 +66,17 @@ public class Grade {
         return letterGrade;
     }
 
-    public double getGrade() {
-        return grade;
+    public String getGrade() {
+        if(grade<=100 && grade>90){
+            return ANSI_GREEN + grade + ANSI_RESET;
+        }
+        if(grade<=90 && grade > 80){
+            return ANSI_YELLOW + grade + ANSI_RESET;
+        }
+        if(grade <=80 && grade > 70) {
+            return ANSI_BLUE + grade + ANSI_RESET;
+        }
+        return ANSI_RED + grade + ANSI_RESET;
     }
 
     public String getLetterGrade() {
@@ -97,7 +114,7 @@ public class Grade {
                 "68-70 = D+\n" +
                 "63-68 = D\n" +
                 "60-63 = D-\n" +
-                "Anything below - F\n" +
+                "50-60 - F\n" +
                 "0-50 = Fremd 50");
     }
 }
