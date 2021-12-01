@@ -12,5 +12,8 @@ public class Question {
 
     private int pointValue;
 
-    
+    private int generatePoints(){
+        int randNum = (int)(Math.random() * 10) + 1;
+        return randNum * 100;
+    }
 }
