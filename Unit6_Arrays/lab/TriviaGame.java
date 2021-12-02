@@ -11,14 +11,16 @@ public class TriviaGame {
     private static int totalPointsEarned = 0;
 
     File questionsFile = new File("TriviaQuestions.txt");
-    Scanner in = new Scanner(questionsFile);
-
 
     public TriviaGame(ArrayList<Question> allQuestions) {
         this.allQuestions = allQuestions;
     }
 
     private void setQuestions() throws FileNotFoundException {
+        Scanner in = new Scanner(questionsFile);
 
+        while (in.hasNextLine()){
+            
+        }
     }
 }
