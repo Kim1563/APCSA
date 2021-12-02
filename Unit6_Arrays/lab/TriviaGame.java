@@ -20,7 +20,7 @@ public class TriviaGame {
         Scanner in = new Scanner(questionsFile);
 
         while (in.hasNextLine()){
-            
+
         }
     }
 }
