@@ -1,6 +1,8 @@
 package Unit6_Arrays.lab;
 
+import java.io.FileNotFoundException;
 import java.util.*;
+import java.io.File;
 
 public class TriviaGame {
     private ArrayList<Question> allQuestions;
@@ -8,7 +10,13 @@ public class TriviaGame {
     private static int streak = 0;
     private static int totalPointsEarned = 0;
 
+    
+
     public TriviaGame(ArrayList<Question> allQuestions) {
         this.allQuestions = allQuestions;
+    }
+
+    private void setQuestions() throws FileNotFoundException {
+
     }
 }
