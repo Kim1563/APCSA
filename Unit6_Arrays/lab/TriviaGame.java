@@ -27,7 +27,10 @@ public class TriviaGame {
 
         // Test Loop
         for (int i = 0; i < 12; i++){
-            
+            String temp = in.nextLine();
+            if (temp.substring(0, 2).equalsIgnoreCase("#Q")){
+                System.out.println(temp);
+            }
         }
     }
 }
