@@ -19,8 +19,15 @@ public class TriviaGame {
     private void setQuestions() throws FileNotFoundException {
         Scanner in = new Scanner(questionsFile);
 
-        while (in.hasNextLine()){
+        /* while (in.hasNextLine()){
+            String question = in.nextLine();
 
+        }
+        */
+
+        // Test Loop
+        for (int i = 0; i < 12; i++){
+            
         }
     }
 }
