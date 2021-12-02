@@ -10,13 +10,13 @@ public class TriviaGame {
     private static int streak = 0;
     private static int totalPointsEarned = 0;
 
-    
+    File questionsFile = new File("TriviaQuestions.txt");
 
     public TriviaGame(ArrayList<Question> allQuestions) {
         this.allQuestions = allQuestions;
     }
 
     private void setQuestions() throws FileNotFoundException {
-
+        
     }
 }
