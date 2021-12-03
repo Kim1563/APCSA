@@ -10,10 +10,8 @@ public class TriviaGame {
     private int streak;
     private int totalPointsEarned;
 
-    File questionsFile = new File("TriviaQuestions.txt");
-
-    public TriviaGame(ArrayList<Question> allQuestions) {
-        this.allQuestions = allQuestions;
+    public TriviaGame() {
+        this.allQuestions = new ArrayList<Question>();
         this.streak = 0;
         this.totalPointsEarned = 0;
     }
@@ -42,12 +40,13 @@ public class TriviaGame {
         this.totalPointsEarned = totalPointsEarned;
     }
 
-    public void setQuestions() throws FileNotFoundException {
+    public void setQuestions(File questionsFile) throws FileNotFoundException {
         Scanner in = new Scanner(questionsFile);
 
         while (in.hasNextLine()){
             String question = in.nextLine();
             String correctAnswer = in.nextLine();
+            // correctAnswer = correctAnswer.substring(2, correctAnswer.indexOf("*"));
             String choice1 = in.nextLine();
             String choice2 = in.nextLine();
 

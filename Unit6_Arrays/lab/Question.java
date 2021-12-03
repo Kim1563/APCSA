@@ -14,6 +14,69 @@ public class Question {
 
     private int pointValue;
 
+    public String getQuestionText() {
+        return questionText;
+    }
+
+    public void setQuestionText(String questionText) {
+        this.questionText = questionText;
+    }
+
+    public String getAnswerChoice1() {
+        return answerChoice1;
+    }
+
+    public void setAnswerChoice1(String answerChoice1) {
+        this.answerChoice1 = answerChoice1;
+    }
+
+    public String getAnswerChoice2() {
+        return answerChoice2;
+    }
+
+    public void setAnswerChoice2(String answerChoice2) {
+        this.answerChoice2 = answerChoice2;
+    }
+
+    public String getAnswerChoice3() {
+        return answerChoice3;
+    }
+
+    public void setAnswerChoice3(String answerChoice3) {
+        this.answerChoice3 = answerChoice3;
+    }
+
+    public String getAnswerChoice4() {
+        return answerChoice4;
+    }
+
+    public void setAnswerChoice4(String answerChoice4) {
+        this.answerChoice4 = answerChoice4;
+    }
+
+    public int getNumChoices() {
+        return numChoices;
+    }
+
+    public void setNumChoices(int numChoices) {
+        this.numChoices = numChoices;
+    }
+
+    public String getCorrectAnswer() {
+        return correctAnswer;
+    }
+
+    public void setCorrectAnswer(String correctAnswer) {
+        this.correctAnswer = correctAnswer;
+    }
+
+    public int getPointValue() {
+        return pointValue;
+    }
+
+    public void setPointValue(int pointValue) {
+        this.pointValue = pointValue;
+    }
 
     /**
      * Generates a random number of points from 100-1000

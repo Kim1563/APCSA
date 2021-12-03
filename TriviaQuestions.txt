@@ -5,14 +5,6 @@ B Orange juice*
 C Coffee*
 D Beer*
 *
-#Q Finish the proverb:*
-Poets are born, ________.*
-^ ...not made.*
-A ...not made.*
-B ...but can also be made.*
-C ...but thats not for sure.*
-D ..., long live the poets!*
-*
 #Q The theory of relativity was introduced in physics by this man.*
 ^ Albert Einstein*
 A Galileo Galilei*
