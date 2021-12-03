@@ -7,7 +7,7 @@ public class Question {
     private String answerChoice2;
     private String answerChoice3;
     private String answerChoice4;
-    
+
     private int numChoices;
 
     private String correctAnswer;
@@ -47,7 +47,7 @@ public class Question {
 
     /**
      * Returns formatted String
-     * @return String that is formatted with question text and answer choices 
+     * @return String that is formatted with question text and answer choices
      */
     public String toString(){
         String output = questionText;
