@@ -7,7 +7,7 @@ import java.io.File;
 public class TriviaDriver {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner in = new Scanner(System.in);
-        File questionsFile = new File("TriviaQuestions.txt");
+        File questionsFile = new File("TriviaQuestionsScience.txt");
 
         System.out.print("Welcome to Trivjava! Please enter your name here: ");
         String name = in.nextLine();

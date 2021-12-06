@@ -1,0 +1,98 @@
+15 total questions
+
+Which of the following reagents would be labeled as highly flammable because of its low flash point:
+X
+W) glycerol
+X) methanol
+Y) carbon tetrachloride
+Z) sulfuric acid
+Which of the following is the BEST description of our Sun:
+Y
+W) a cool large star similar to Proxima Centauri
+X) a small-sized star about 6 billion years old
+Y) a mid-sized yellow dwarf star
+Z) a large-sized red giant about 4.7 billion years old
+Which of the following occurs in meiosis but NOT in mitosis:
+Y
+W) spindle apparatus attaches to kinetochores
+X) nuclear membrane is not visible
+Y) crossing over
+Z) chromosomes line up at central area of cell
+The amplitude of a sound wave most closely relates to its:
+Y
+W) frequency
+X) wavelength
+Y) loudness
+Z) overtones
+If two solutions that are separated by a semipermeable membrane have the same osmotic pressure, they are said to be:
+W
+W) isotonic
+X) hypotonic
+Y) hypertonic
+Z) hyperosmotic
+A circuit with 2 different resistors wired in series will have a total resistance that is:
+W
+W) equal to the sum of the two resistances
+X) less than either resistance
+Y) equal to that of the greater resistance
+Z) equal to that of the lesser resistance
+Though T-cells originate in bone marrow, where in the human body do they mature?
+Y
+W) Thalamus
+X) Heart
+Y) Thymus
+Z) Gut
+What type of smog in the boundary layer of the atmosphere contains sulfur dioxide?
+Y
+W) Oxidizing
+X) Photochemical
+Y) Reducing
+Z) Boundary layer
+In the use of a statistical test, which of the following constitutes aType I error?
+W
+W) rejecting a true null hypothesis
+X) accepting a false null hypothesis
+Y) using a sample size that is too small for the test
+Z) comparing samples that differ too much in size
+The degree of unsaturation of a hydrocarbon containing two rings is equivalent to the degree of unsaturation of a hydrocarbon containing an:
+Y
+W) Alkane
+X) Alkene
+Y) Alkyne
+Z) Alcohol
+Which of the following does not describe how atoms in a CH2 group can vibrate?
+Y
+W) Rocking
+X) Symmetrical stretching
+Y) See-sawing
+Z) Twisting
+L-alanine and D-alanine are BEST classified as what type of isomers:
+Z
+W) cis
+X) trans
+Y) structural
+Z) optical
+Which of the following BEST explains how cyclic AMP can cause so many different intracellular responses in a mammalian cell:
+Y
+W) it is produced in large quantities
+X) it migrates to the DNA where it binds to a variety of histones
+Y) it activates a wide variety of specific protein kinases
+Z) it prevents the activation of other hormonal signals
+Which of the following is TRUE about any two successive terms in the Fibonacci sequence:
+Y
+W) their product is a Fibonacci number
+X) they are either both odd or both even
+Y) they are relatively prime
+Z) their quotient is the golden ratio
+Which of the following is a problem that affects most plants growing in very acidic soil:
+Y
+W) iron deficiency
+X) accumulation of excess salt in their foliage
+Y) aluminum toxicity to their roots
+Z) excess calcium and magnesium ion uptake
+Which of the following best illustrates a limitation of a supercapacitor, or electric double-layer capacitor, versus an electrochemical battery:
+Z
+W) virtually unlimited cycle life
+X) rapid recharging
+Y) low impedance
+Z) high self-discharge rate

@@ -5,22 +5,22 @@ import java.util.*;
 import java.io.File;
 
 public class TriviaGame {
-    private ArrayList<Question> allQuestions;
+    private Question[] allQuestions;
 
     private int streak;
     private int totalPointsEarned;
 
     public TriviaGame() {
-        this.allQuestions = new ArrayList<Question>();
+        this.allQuestions = new Question[100];
         this.streak = 0;
         this.totalPointsEarned = 0;
     }
 
-    public ArrayList<Question> getAllQuestions() {
+    public Question[] getAllQuestions() {
         return allQuestions;
     }
 
-    public void setAllQuestions(ArrayList<Question> allQuestions) {
+    public void setAllQuestions(Question[] allQuestions) {
         this.allQuestions = allQuestions;
     }
 
@@ -46,21 +46,8 @@ public class TriviaGame {
         while (in.hasNextLine()){
             String question = in.nextLine();
             String correctAnswer = in.nextLine();
-            // correctAnswer = correctAnswer.substring(2, correctAnswer.indexOf("*"));
             String choice1 = in.nextLine();
             String choice2 = in.nextLine();
-
-            if (in.nextLine().equals("*")){
-                Question q = new Question(question, choice1, choice2, correctAnswer);
-                allQuestions.add(q);
-                in.nextLine();
-            } else {
-                String choice3 = in.nextLine();
-                String choice4 = in.nextLine();
-                Question q = new Question(question, choice1, choice2, choice3, choice4, correctAnswer);
-                allQuestions.add(q);
-                in.nextLine();
-            }
 
             if(!in.hasNextLine()){
                 break;
