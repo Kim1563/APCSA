@@ -1,4 +1,4 @@
-10 total questions
+15 total questions
 
 Which of the following reagents would be labeled as highly flammable because of its low flash point:
 X
@@ -60,3 +60,39 @@ W) Alkane
 X) Alkene
 Y) Alkyne
 Z) Alcohol
+Which of the following does not describe how atoms in a CH2 group can vibrate?
+Y
+W) Rocking
+X) Symmetrical stretching
+Y) See-sawing
+Z) Twisting
+L-alanine and D-alanine are BEST classified as what type of isomers:
+Z
+W) cis
+X) trans
+Y) structural
+Z) optical
+Which of the following BEST explains how cyclic AMP can cause so many different intracellular responses in a mammalian cell:
+Y
+W) it is produced in large quantities
+X) it migrates to the DNA where it binds to a variety of histones
+Y) it activates a wide variety of specific protein kinases
+Z) it prevents the activation of other hormonal signals
+Which of the following is TRUE about any two successive terms in the Fibonacci sequence:
+Y
+W) their product is a Fibonacci number
+X) they are either both odd or both even
+Y) they are relatively prime
+Z) their quotient is the golden ratio
+Which of the following is a problem that affects most plants growing in very acidic soil:
+Y
+W) iron deficiency
+X) accumulation of excess salt in their foliage
+Y) aluminum toxicity to their roots
+Z) excess calcium and magnesium ion uptake
+Which of the following best illustrates a limitation of a supercapacitor, or electric double-layer capacitor, versus an electrochemical battery:
+Z
+W) virtually unlimited cycle life
+X) rapid recharging
+Y) low impedance
+Z) high self-discharge rate
