@@ -8,12 +8,14 @@ public class TriviaGame {
     private Question[] allQuestions;
 
     private int streak;
+    private int highestStreak;
     private int totalPointsEarned;
 
     public TriviaGame() {
         this.allQuestions = new Question[15];
         this.streak = 0;
         this.totalPointsEarned = 0;
+        this.highestStreak = 0;
     }
 
     public Question[] getAllQuestions() {
@@ -40,6 +42,14 @@ public class TriviaGame {
         this.totalPointsEarned = totalPointsEarned;
     }
 
+    public int getHighestStreak() {
+        return highestStreak;
+    }
+
+    public void setHighestStreak(int highestStreak) {
+        this.highestStreak = highestStreak;
+    }
+
     public void setQuestions() throws FileNotFoundException {
 
         File questionsFile = new File("TriviaQuestionsScience.txt");
@@ -55,9 +65,14 @@ public class TriviaGame {
             String choice3 = in.nextLine();
             String choice4 = in.nextLine();
 
-            this.allQuestions[index] = new Question(question, choice1, choice2, choice3, choice4, correctAnswer);
+            Question q = new Question(question, choice1, choice2, choice3, choice4, correctAnswer);
+            this.allQuestions[index] = q;
 
-            if(!in.hasNextLine()){
+            if (index < 14){
+                index++;
+            }
+
+            if (!in.hasNextLine()){
                 break;
             }
         }

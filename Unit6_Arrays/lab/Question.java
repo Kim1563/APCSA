@@ -8,8 +8,6 @@ public class Question {
     private String answerChoice3;
     private String answerChoice4;
 
-    private int numChoices;
-
     private String correctAnswer;
 
     private int pointValue;
@@ -54,14 +52,6 @@ public class Question {
         this.answerChoice4 = answerChoice4;
     }
 
-    public int getNumChoices() {
-        return numChoices;
-    }
-
-    public void setNumChoices(int numChoices) {
-        this.numChoices = numChoices;
-    }
-
     public String getCorrectAnswer() {
         return correctAnswer;
     }
@@ -95,31 +85,18 @@ public class Question {
         this.answerChoice3 = answerChoice3;
         this.answerChoice4 = answerChoice4;
         this.correctAnswer = correctAnswer;
-        this.numChoices = 4;
         this.pointValue = generatePoints();
     }
-
-    // Constructor for questions with two answer choices
-    public Question(String questionText, String answerChoice1, String answerChoice2, String correctAnswer) {
-        this.questionText = questionText;
-        this.answerChoice1 = answerChoice1;
-        this.answerChoice2 = answerChoice2;
-        this.numChoices = 2;
-        this.pointValue = generatePoints();
-    }
-
     /**
      * Returns formatted String
      * @return String that is formatted with question text and answer choices
      */
     public String toString(){
         String output = questionText;
-        output += "\n\tA. " + this.answerChoice1;
-        output += "\n\tB. " + this.answerChoice2;
-        if (numChoices == 4) {
-            output += "\n\tC. " + this.answerChoice3;
-            output += "\n\tD. " + this.answerChoice4;
-        }
+        output += "\n\t" + this.answerChoice1;
+        output += "\n\t" + this.answerChoice2;
+        output += "\n\t" + this.answerChoice3;
+        output += "\n\t" + this.answerChoice4;
         output += "\n\tPoint value: " + this.pointValue;
         return output;
     }
