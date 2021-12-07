@@ -158,6 +158,14 @@
           <properties class="java.util.InputMismatchException" package="java.util" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit6_Arrays/lab/TriviaDriver.java</url>
+          <line>7</line>
+          <properties class="Unit6_Arrays.lab.TriviaDriver" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

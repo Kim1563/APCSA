@@ -40,9 +40,6 @@ public class TriviaDriver {
 
             index++;
 
-            System.out.print("Do you want a question? (Y or N): ");
-            decision = in.nextLine();
-
             if (decision.equalsIgnoreCase("N")){
                 System.exit(0);
             }
