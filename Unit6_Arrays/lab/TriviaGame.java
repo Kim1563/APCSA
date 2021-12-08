@@ -11,11 +11,16 @@ public class TriviaGame {
     private int highestStreak;
     private int totalPointsEarned;
 
+    private int questionsAnswered;
+    private int questionsCorrect;
+
     public TriviaGame() {
         this.allQuestions = new Question[15];
         this.streak = 0;
         this.totalPointsEarned = 0;
         this.highestStreak = 0;
+        this.questionsAnswered = 0;
+        this.questionsCorrect = 0;
     }
 
     public Question[] getAllQuestions() {
@@ -50,6 +55,22 @@ public class TriviaGame {
         this.highestStreak = highestStreak;
     }
 
+    public int getQuestionsAnswered() {
+        return questionsAnswered;
+    }
+
+    public void setQuestionsAnswered(int questionsAnswered) {
+        this.questionsAnswered = questionsAnswered;
+    }
+
+    public int getQuestionsCorrect() {
+        return questionsCorrect;
+    }
+
+    public void setQuestionsCorrect(int questionsCorrect) {
+        this.questionsCorrect = questionsCorrect;
+    }
+
     public void setQuestions() throws FileNotFoundException {
 
         File questionsFile = new File("TriviaQuestionsScience.txt");
@@ -77,4 +98,20 @@ public class TriviaGame {
             }
         }
     }
+
+    public Question[] shuffle(Question[] array) {
+        List<Question> list = new ArrayList<>();
+        for (Question q : array) {
+            list.add(q);
+        }
+
+        Collections.shuffle(list);
+
+        for (int i = 0; i < list.size(); i++) {
+            array[i] = list.get(i);
+        }
+
+        return array;
+    }
+
 }

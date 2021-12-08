@@ -14,8 +14,10 @@ public class TriviaDriver {
         System.out.println("Hello " + name + "!\n");
         TriviaGame game = new TriviaGame();
 
+
         game.setQuestions();
         game.setStreak(1);
+        game.setAllQuestions(game.shuffle(game.getAllQuestions()));
 
         System.out.print("Do you want a question? (Y or N): ");
         String decision = in.nextLine();
@@ -37,6 +39,7 @@ public class TriviaDriver {
                 System.out.println("Current score: " + game.getTotalPointsEarned());
                 System.out.println("Current streak: " + game.getStreak());
 
+                game.setQuestionsCorrect(game.getQuestionsCorrect() + 1);
 
                 int tempStreak = game.getStreak();
 
@@ -60,6 +63,8 @@ public class TriviaDriver {
 
             }
 
+            game.setQuestionsAnswered(game.getQuestionsAnswered() + 1);
+
             System.out.print("Do you want a question? (Y or N): ");
             decision = in.nextLine();
 
@@ -68,6 +73,8 @@ public class TriviaDriver {
             if (decision.equalsIgnoreCase("N")){
                 System.out.println("Your highest streak: " + game.getHighestStreak());
                 System.out.println("Your final score: " + game.getTotalPointsEarned());
+                System.out.println("Number of questions answered correctly: " + game.getQuestionsCorrect());
+                System.out.println("Percentage of questions answered correctly: " + Math.round(game.getQuestionsCorrect()/(double)game.getQuestionsAnswered()) + "%");
             }
         }
     }
