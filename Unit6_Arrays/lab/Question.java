@@ -83,10 +83,10 @@ public class Question {
     public Question(String questionText, String answerChoice1, String answerChoice2, String answerChoice3, String answerChoice4, String correctAnswer) {
         this.questionText = questionText;
 
-        this.answerChoice1 = answerChoice1;
-        this.answerChoice2 = answerChoice2;
-        this.answerChoice3 = answerChoice3;
-        this.answerChoice4 = answerChoice4;
+        this.answerChoice1 = "W) " + answerChoice1.substring(3);
+        this.answerChoice2 = "X) " + answerChoice2.substring(3);
+        this.answerChoice3 = "Y) " + answerChoice3.substring(3);
+        this.answerChoice4 = "Z) " + answerChoice4.substring(3);
 
         this.correctAnswer = correctAnswer;
 
