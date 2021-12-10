@@ -31,13 +31,17 @@ public class TriviaDriver {
             String userAnswer = in.nextLine();
 
             if (userAnswer.equalsIgnoreCase(currentQuestion.getCorrectAnswer())){
+                System.out.println("========================================================");
                 System.out.println("Nice job! You were correct!");
                 System.out.println("Points earned: " + currentQuestion.getPointValue());
+                System.out.println("========================================================");
 
                 game.setTotalPointsEarned(game.getTotalPointsEarned() + currentQuestion.getPointValue());
 
+                System.out.println("========================================================");
                 System.out.println("Current score: " + game.getTotalPointsEarned());
                 System.out.println("Current streak: " + game.getStreak());
+                System.out.println("========================================================");
 
                 game.setQuestionsCorrect(game.getQuestionsCorrect() + 1);
 
@@ -49,18 +53,20 @@ public class TriviaDriver {
                     game.setHighestStreak(game.getStreak());
                 }
             } else {
+                System.out.println("========================================================");
                 System.out.println("You were incorrect!");
                 System.out.println("The correct answer was: " + game.getAllQuestions()[index].getCorrectAnswer());
                 System.out.println("Points lost: " + game.getAllQuestions()[index].getPointValue());
 
                 game.setTotalPointsEarned(game.getTotalPointsEarned() - currentQuestion.getPointValue());
 
+                System.out.println("========================================================");
                 System.out.println("Current score: " + game.getTotalPointsEarned());
 
                 game.setStreak(0);
 
                 System.out.println("Current streak: " + game.getStreak());
-
+                System.out.println("========================================================");
             }
 
             game.setQuestionsAnswered(game.getQuestionsAnswered() + 1);
@@ -81,9 +87,11 @@ public class TriviaDriver {
     }
 
     public static void gameOver(TriviaGame game){
+        System.out.println("========================================================");
         System.out.println("Your highest streak: " + game.getHighestStreak());
         System.out.println("Your final score: " + game.getTotalPointsEarned());
         System.out.println("Number of questions answered correctly: " + game.getQuestionsCorrect());
         System.out.println("Percentage of questions answered correctly: " + Math.round(game.getQuestionsCorrect()/(double)game.getQuestionsAnswered()) + "%");
+        System.out.println("========================================================");
     }
 }
