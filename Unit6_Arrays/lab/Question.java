@@ -90,34 +90,6 @@ public class Question {
 
         this.correctAnswer = correctAnswer;
 
-        String[] choices = {this.answerChoice1, this.answerChoice2, this.answerChoice3, this.answerChoice4};
-
-        for (String s:choices){
-            if (s.substring(0, 1).equalsIgnoreCase(this.correctAnswer)){
-                this.correctAnswer = s;
-            }
-        }
-
-        ArrayList<String> questionList= new ArrayList<String>();
-
-        questionList.add(this.answerChoice1);
-        questionList.add(this.answerChoice2);
-        questionList.add(this.answerChoice3);
-        questionList.add(this.answerChoice4);
-
-        Collections.shuffle(questionList);
-
-        this.answerChoice1 = questionList.get(0);
-        this.answerChoice2 = questionList.get(1);
-        this.answerChoice3 = questionList.get(2);
-        this.answerChoice4 = questionList.get(3);
-
-        for (int i = 0; i < questionList.size(); i++){
-            if (questionList.get(i).equalsIgnoreCase(this.correctAnswer)){
-                this.correctAnswer = this.correctAnswer.substring(0, 1);
-            }
-        }
-
         this.pointValue = generatePoints();
     }
     /**

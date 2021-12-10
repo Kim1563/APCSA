@@ -8,7 +8,7 @@ public class TriviaDriver {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner in = new Scanner(System.in);
 
-        System.out.print("Welcome to Trivjava! Please enter your name here: ");
+        System.out.print("Welcome to Trivjava! Answer questions to earn points and view your stats by pressing N! Please enter your name here: ");
         String name = in.nextLine();
 
         System.out.println("Hello " + name + "!\n");
@@ -65,17 +65,25 @@ public class TriviaDriver {
 
             game.setQuestionsAnswered(game.getQuestionsAnswered() + 1);
 
+            index++;
+
+            if (index >= game.getAllQuestions().length){
+                gameOver(game);
+            }
+
             System.out.print("Do you want a question? (Y or N): ");
             decision = in.nextLine();
 
-            index++;
-
             if (decision.equalsIgnoreCase("N")){
-                System.out.println("Your highest streak: " + game.getHighestStreak());
-                System.out.println("Your final score: " + game.getTotalPointsEarned());
-                System.out.println("Number of questions answered correctly: " + game.getQuestionsCorrect());
-                System.out.println("Percentage of questions answered correctly: " + Math.round(game.getQuestionsCorrect()/(double)game.getQuestionsAnswered()) + "%");
+                gameOver(game);
             }
         }
+    }
+
+    public static void gameOver(TriviaGame game){
+        System.out.println("Your highest streak: " + game.getHighestStreak());
+        System.out.println("Your final score: " + game.getTotalPointsEarned());
+        System.out.println("Number of questions answered correctly: " + game.getQuestionsCorrect());
+        System.out.println("Percentage of questions answered correctly: " + Math.round(game.getQuestionsCorrect()/(double)game.getQuestionsAnswered()) + "%");
     }
 }
