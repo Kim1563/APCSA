@@ -8,7 +8,7 @@ public class TriviaDriver {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner in = new Scanner(System.in);
 
-        System.out.print("Welcome to Trivjava! Answer questions to earn points and view your stats by pressing N! Please enter your name here: ");
+        System.out.print("Welcome to a random trivia game made on Java! Answer questions to earn points and view your stats by pressing N! Please enter your name here: ");
         String name = in.nextLine();
 
         System.out.println("Hello " + name + "!\n");
@@ -16,14 +16,14 @@ public class TriviaDriver {
 
 
         game.setQuestions();
-        game.setStreak(1);
+        game.setStreak(0);
         game.setAllQuestions(game.shuffle(game.getAllQuestions()));
 
         System.out.print("Do you want a question? (Y or N): ");
         String decision = in.nextLine();
         int index = 0;
 
-        while (!decision.equalsIgnoreCase("N")){
+        while (!decision.equalsIgnoreCase("N") && index < 15){
             Question currentQuestion = game.getAllQuestions()[index];
             System.out.println(currentQuestion.toString());
 
@@ -34,9 +34,12 @@ public class TriviaDriver {
                 System.out.println("========================================================");
                 System.out.println("Nice job! You were correct!");
                 System.out.println("Points earned: " + currentQuestion.getPointValue());
+                System.out.println("Streak points earned: " + game.getStreak() * 50);
                 System.out.println("========================================================");
 
                 game.setTotalPointsEarned(game.getTotalPointsEarned() + currentQuestion.getPointValue());
+
+                game.setStreak(game.getStreak() + 1);
 
                 System.out.println("========================================================");
                 System.out.println("Current score: " + game.getTotalPointsEarned());
@@ -46,8 +49,6 @@ public class TriviaDriver {
                 game.setQuestionsCorrect(game.getQuestionsCorrect() + 1);
 
                 int tempStreak = game.getStreak();
-
-                game.setStreak(game.getStreak() + 1);
 
                 if (game.getStreak() > tempStreak){
                     game.setHighestStreak(game.getStreak());
@@ -73,25 +74,47 @@ public class TriviaDriver {
 
             index++;
 
-            if (index >= game.getAllQuestions().length){
+            if (decision.equalsIgnoreCase("N") || index == 15){
                 gameOver(game);
+                break;
             }
 
             System.out.print("Do you want a question? (Y or N): ");
             decision = in.nextLine();
-
-            if (decision.equalsIgnoreCase("N")){
-                gameOver(game);
-            }
         }
     }
 
+    /**
+     * Runs when game is over, displays statistics of the game
+     * @param game current game
+     */
     public static void gameOver(TriviaGame game){
         System.out.println("========================================================");
         System.out.println("Your highest streak: " + game.getHighestStreak());
         System.out.println("Your final score: " + game.getTotalPointsEarned());
         System.out.println("Number of questions answered correctly: " + game.getQuestionsCorrect());
-        System.out.println("Percentage of questions answered correctly: " + Math.round(game.getQuestionsCorrect()/(double)game.getQuestionsAnswered()) + "%");
+        System.out.println("Percentage of questions answered correctly: " + Math.round(game.getQuestionsCorrect()/(double)game.getQuestionsAnswered() * 100) + "%");
         System.out.println("========================================================");
+    }
+
+    public static String getPowerUp(){
+        String[] powerups = {"Bonus points", "Streak boost", "Points multiplier", "Insurance"};
+        shuffle(powerups);
+        return powerups[0];
+    }
+
+    public static String[] shuffle(String[] array) {
+        List<String> list = new ArrayList<>();
+        for (String s : array) {
+            list.add(s);
+        }
+
+        Collections.shuffle(list);
+
+        for (int i = 0; i < list.size(); i++) {
+            array[i] = list.get(i);
+        }
+
+        return array;
     }
 }

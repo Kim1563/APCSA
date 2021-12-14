@@ -71,6 +71,10 @@ public class TriviaGame {
         this.questionsCorrect = questionsCorrect;
     }
 
+    /**
+     * Loops through the file and adds questions to the array of questions
+     * @throws FileNotFoundException
+     */
     public void setQuestions() throws FileNotFoundException {
 
         File questionsFile = new File("TriviaQuestionsScience.txt");
@@ -99,6 +103,11 @@ public class TriviaGame {
         }
     }
 
+    /**
+     * Shuffles the order of the questions in the array
+     * @param array This is the Question array
+     * @return Shuffled Question array
+     */
     public Question[] shuffle(Question[] array) {
         List<Question> list = new ArrayList<>();
         for (Question q : array) {
