@@ -17,6 +17,8 @@ public class TriviaDriver {
 
         game.setQuestions();
         game.setStreak(0);
+
+        // Shuffles questions to randomize order
         game.setAllQuestions(game.shuffle(game.getAllQuestions()));
 
         System.out.print("Do you want a question? (Y or N): ");
@@ -24,6 +26,7 @@ public class TriviaDriver {
         int index = 0;
 
         while (!decision.equalsIgnoreCase("N") && index < 15){
+
             Question currentQuestion = game.getAllQuestions()[index];
             System.out.println(currentQuestion.toString());
 
@@ -32,15 +35,19 @@ public class TriviaDriver {
 
             if (userAnswer.equalsIgnoreCase(currentQuestion.getCorrectAnswer())){
 
+                // tempStreak to determine highest streak
+                int tempStreak = game.getStreak();
+
+                game.setStreak(game.getStreak() + 1);
+
                 System.out.println("========================================================");
                 System.out.println("Nice job! You were correct!");
                 System.out.println("Points earned: " + currentQuestion.getPointValue());
                 System.out.println("Streak points earned: " + game.getStreak() * 50);
                 System.out.println("========================================================");
 
-                game.setTotalPointsEarned(game.getTotalPointsEarned() + currentQuestion.getPointValue());
-
-                game.setStreak(game.getStreak() + 1);
+                // Points from before + current question + streak bonus
+                game.setTotalPointsEarned(game.getTotalPointsEarned() + currentQuestion.getPointValue() + game.getStreak() * 50);
 
                 System.out.println("========================================================");
                 System.out.println("Current score: " + game.getTotalPointsEarned());
@@ -49,8 +56,7 @@ public class TriviaDriver {
 
                 game.setQuestionsCorrect(game.getQuestionsCorrect() + 1);
 
-                int tempStreak = game.getStreak();
-
+                // determines highest streak
                 if (game.getStreak() > tempStreak){
                     game.setHighestStreak(game.getStreak());
                 }
@@ -75,13 +81,14 @@ public class TriviaDriver {
 
             index++;
 
-            if (decision.equalsIgnoreCase("N") || index == 15){
-                gameOver(game);
-                break;
+            if (index < 15) {
+                System.out.print("Do you want a question? (Y or N): ");
+                decision = in.nextLine();
             }
+        }
 
-            System.out.print("Do you want a question? (Y or N): ");
-            decision = in.nextLine();
+        if (decision.equalsIgnoreCase("N") || index == 15){
+            gameOver(game);
         }
     }
 
@@ -90,6 +97,7 @@ public class TriviaDriver {
      * @param game current game
      */
     public static void gameOver(TriviaGame game){
+        System.out.println("\n\n\nGame over!");
         System.out.println("========================================================");
         System.out.println("Your highest streak: " + game.getHighestStreak());
         System.out.println("Your final score: " + game.getTotalPointsEarned());
