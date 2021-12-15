@@ -30,16 +30,12 @@ public class TriviaDriver {
             System.out.print("Type your answer: ");
             String userAnswer = in.nextLine();
 
-            String powerup = "";
-
             if (userAnswer.equalsIgnoreCase(currentQuestion.getCorrectAnswer())){
-                powerup = getPowerUp();
 
                 System.out.println("========================================================");
                 System.out.println("Nice job! You were correct!");
                 System.out.println("Points earned: " + currentQuestion.getPointValue());
                 System.out.println("Streak points earned: " + game.getStreak() * 50);
-                System.out.println("Your powerup for the next question: " + powerup);
                 System.out.println("========================================================");
 
                 game.setTotalPointsEarned(game.getTotalPointsEarned() + currentQuestion.getPointValue());
@@ -100,26 +96,5 @@ public class TriviaDriver {
         System.out.println("Number of questions answered correctly: " + game.getQuestionsCorrect());
         System.out.println("Percentage of questions answered correctly: " + Math.round(game.getQuestionsCorrect()/(double)game.getQuestionsAnswered() * 100) + "%");
         System.out.println("========================================================");
-    }
-
-    public static String getPowerUp(){
-        String[] powerups = {"Bonus points", "Streak boost", "Points multiplier", "Insurance"};
-        shuffle(powerups);
-        return powerups[0];
-    }
-
-    public static String[] shuffle(String[] array) {
-        List<String> list = new ArrayList<>();
-        for (String s : array) {
-            list.add(s);
-        }
-
-        Collections.shuffle(list);
-
-        for (int i = 0; i < list.size(); i++) {
-            array[i] = list.get(i);
-        }
-
-        return array;
     }
 }
