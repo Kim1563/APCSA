@@ -1,5 +1,7 @@
 package Unit7_ArrayList.examples;
 
+import java.*;
+
 import java.util.ArrayList;
 
 public class Notes_7_3_Examples {
@@ -17,7 +19,7 @@ public class Notes_7_3_Examples {
         vals.add(2);
         vals.add(1, 7);
         vals.add(4);
-        vals.add(new Integer (8));
+        vals.add(new Integer(8));
         vals.add(1);
         vals.add(6);
         vals.add(3);
@@ -46,7 +48,7 @@ public class Notes_7_3_Examples {
 
         // Use a for loop to fill both list1 and list2 with values 1-20
 
-        for (int i = 1; i <= 20; i++){
+        for (int i = 1; i <= 20; i++) {
             list1.add(i);
             list2.add(i);
         }
@@ -88,61 +90,65 @@ public class Notes_7_3_Examples {
 
     }
 
-    /**
-     * This method will count and return how many values in the ArrayList nums
-     * are even.  Write this method with a traditional for loop
-     * @param nums ArrayList of Integers
-     * @return number of even values
-     */
+        /**
+         * This method will count and return how many values in the ArrayList nums
+         * are even.  Write this method with a traditional for loop
+         *
+         * @param nums ArrayList of Integers
+         * @return number of even values
+         */
 
-    public static int countEvens(ArrayList<Integer> nums) {
+        public static int countEvens (ArrayList < Integer > nums) {
         int count = 0;
-        for (int i = 0; i < nums.size(); i++){
-            if (nums.get(i) % 2 == 0){
+        for (int i = 0; i < nums.size(); i++) {
+            if (nums.get(i) % 2 == 0) {
                 count++;
             }
         }
         return count;
     }
 
+        /**
+         * This method will count and return how many values in the ArrayList nums
+         * are even.  Write this method with a for each loop
+         *
+         * @param nums ArrayList of Integers
+         * @return number of even values
+         */
 
-    /**
-     * This method will count and return how many values in the ArrayList nums
-     * are even.  Write this method with a for each loop
-     * @param nums ArrayList of Integers
-     * @return number of even values
-     */
-
-    public static int countEvensForEach(ArrayList<Integer> nums) {
+        public static int countEvensForEach (ArrayList < Integer > nums) {
         int count = 0;
-        for (Integer i:nums){
-            if (i % 2 == 0){
+        for (Integer i : nums) {
+            if (i % 2 == 0) {
                 count++;
             }
         }
         return count;
     }
 
-    /**
-     * This method will remove all even Integer values in the ArrayList
-     * The ArrayList will be traversed from beginning to end.
-     * @param vals ArrayList to remove values from
-     */
-    public static void removeEvensForward(ArrayList<Integer> vals) {
-        for (int i = 0; i < vals.size(); i++){
-            if (vals.get(i) % 2 == 0){
+        /**
+         * This method will remove all even Integer values in the ArrayList
+         * The ArrayList will be traversed from beginning to end.
+         *
+         * @param vals ArrayList to remove values from
+         */
+        public static void removeEvensForward (ArrayList < Integer > vals) {
+        for (int i = 0; i < vals.size(); i++) {
+            if (vals.get(i) % 2 == 0) {
                 vals.remove(i);
             }
         }
     }
-    /**
-     * This method will remove all even Integer values in the ArrayList
-     * The ArrayList will be traversed from end to beginning
-     * @param vals ArrayList to remove values from
-     */
-    public static void removeEvensBackward(ArrayList<Integer> vals) {
-        for (int i = vals.size() - 1; i >= 0; i--){
-            if (vals.get(i) % 2 == 0){
+
+        /**
+         * This method will remove all even Integer values in the ArrayList
+         * The ArrayList will be traversed from end to beginning
+         *
+         * @param vals ArrayList to remove values from
+         */
+        public static void removeEvensBackward (ArrayList < Integer > vals) {
+        for (int i = vals.size() - 1; i >= 0; i--) {
+            if (vals.get(i) % 2 == 0) {
                 vals.remove(i);
             }
         }
