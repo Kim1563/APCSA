@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f574b653-4512-43b8-b410-3a014efdaa52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit7_ArrayList/examples/Notes_7_3_Examples.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit6_Arrays/lab/TriviaDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit6_Arrays/lab/TriviaDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APCSA/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APCSA/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APCSA/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APCSA/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APCSA/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APCSA/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APCSA/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APCSA/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APCSA/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APCSA/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APCSA/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMasterDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMasterDriver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +58,7 @@
       <recent name="C:\Users\kim1563\Documents\GitHub\APCSA" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Notes_7_3_Examples">
+  <component name="RunManager" selected="Application.TicketMasterDriver">
     <configuration name="FileReadExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit6_Arrays.examples.FileReadExample" />
       <module name="APCSA" />
@@ -110,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit6_Arrays.examples.StudentTester" />
+    <configuration name="TicketMasterDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.lab.TicketMasterDriver" />
       <module name="APCSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit6_Arrays.examples.*" />
+          <option name="PATTERN" value="Unit7_ArrayList.lab.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TicketMasterDriver" />
         <item itemvalue="Application.Notes_7_3_Examples" />
         <item itemvalue="Application.TriviaDriver" />
         <item itemvalue="Application.FileReadExampleContinued" />
         <item itemvalue="Application.FileReadExample" />
-        <item itemvalue="Application.StudentTester" />
       </list>
     </recent_temporary>
   </component>

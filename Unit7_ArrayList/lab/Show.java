@@ -1,5 +1,7 @@
 package Unit7_ArrayList.lab;
 
+import java.util.Formatter;
+
 public class Show {
     private String date;
     private double price;
@@ -62,9 +64,20 @@ public class Show {
         output += date + "\t\t";
         output += "$" + price + "\t\t";
         output += quantity + "\t\t";
-        output += performer + "\t\t\t";
+        output += performer;
+
+        int performerLength = 23 - performer.length();
+
+        for (int i = 0; i < performerLength; i++) {
+            output += " ";
+        }
+
         output += city;
 
         return output;
+    }
+
+    public static String format(String format, Object... args) {
+        return new Formatter().format(format, args).toString();
     }
 }

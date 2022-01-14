@@ -24,17 +24,33 @@ public class TicketMaster {
     }
 
     public String toString(){
-        String output = "Date\t\tPrice\t\tQty\t\tPerformer\t\t\tCity";
-        output += "\n----------------------------------------------------------------";
+        String output = "Date\t\t\tPrice\t\tQty\t\t Performer\t\t\t\tCity";
+        output += "\n---------------------------------------------------------------------------";
 
         for (Show s : this.shows){
+            output += "\n";
             output += s.toString();
         }
 
         return output;
     }
 
-    public void addShow(Show s){
-        shows.add(s);
+    public void addShows() throws FileNotFoundException{
+        while (inFile.hasNext()){
+            String date = inFile.next();
+
+            double price = inFile.nextDouble();
+            int qty = inFile.nextInt();
+
+            String temp = inFile.nextLine();
+
+            String performer = temp.substring(0, temp.indexOf(","));
+
+            String city = temp.substring(temp.indexOf(",") + 1);
+
+            shows.add(new Show(date, price, qty, performer, city));
+
+            inFile.nextLine();
+        }
     }
 }
