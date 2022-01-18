@@ -76,8 +76,4 @@ public class Show {
 
         return output;
     }
-
-    public static String format(String format, Object... args) {
-        return new Formatter().format(format, args).toString();
-    }
 }

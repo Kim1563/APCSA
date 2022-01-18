@@ -35,7 +35,15 @@ public class TicketMaster {
         return output;
     }
 
-    public void addShows() throws FileNotFoundException{
+    public void searchCity(String target){
+        for (int i = shows.size(); i >= 0; i--){
+            if (!shows.get(i).getCity().equals(target)){
+                shows.remove(i);
+            }
+        }
+    }
+
+    public void addShows() throws FileNotFoundException {
         while (inFile.hasNext()){
             String date = inFile.next();
 
