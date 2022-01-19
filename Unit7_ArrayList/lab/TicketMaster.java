@@ -26,12 +26,10 @@ public class TicketMaster {
     public String toString(){
         String output = "Date\t\t\tPrice\t\tQty\t\t Performer\t\t\t\tCity";
         output += "\n---------------------------------------------------------------------------";
-
-        for (Show s : this.shows){
+        for (Show s : this.shows) {
             output += "\n";
             output += s.toString();
         }
-
         return output;
     }
 

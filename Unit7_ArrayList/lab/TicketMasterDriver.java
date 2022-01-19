@@ -11,6 +11,14 @@ public class TicketMasterDriver {
 
         System.out.println("Welcome to the TicketMaster Console");
         System.out.println("======================================");
+        System.out.println("In the following prompt, type an integer from 0-6 to view the available tickets:");
+        System.out.println("\t\t(0) View all tickets (not alphabetical)");
+        System.out.println("\t\t(1) View all tickets (ordered A-Z)");
+        System.out.println("\t\t(2) View all tickets (ordered Z-A)");
+        System.out.println("\t\t(3) View all tickets (sorted by price - low to high)");
+        System.out.println("\t\t(4) View all tickets (sorted by price - high to low)");
+        System.out.println("\t\t(5) Search by location");
+        System.out.println("\t\t(6) Exit TicketMaster");
         System.out.println();
 
         try {
@@ -33,6 +41,9 @@ public class TicketMasterDriver {
                     if (input == 6){
                         System.out.println("Thanks for using TicketMaster");
                         System.exit(420);
+                    } else {
+                        process(input, shows);
+                        System.out.println(ticketMaster.toString());
                     }
                 } else {
                     System.out.println("Out of range");
@@ -49,5 +60,14 @@ public class TicketMasterDriver {
             }
         }
 
+    }
+
+    public static void process(int status, ArrayList<Show> shows){
+        if (status == 1){
+            Show temp = shows.get(0);
+            for (Show s : shows){
+                if (temp.getcompareTo(s))
+            }
+        }
     }
 }
