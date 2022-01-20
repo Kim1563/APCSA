@@ -75,6 +75,13 @@ public class Notes_7_4_Examples {
         System.out.println("Whether findMin is increasing" + findMin(numsNoRepeats));
         System.out.println("Whether numsRepeats is increasing: " + findMin(numsRepeats));
         System.out.println("Whether orderedNums is increasing: " + findMin(orderedNums));
+
+        System.out.println("Whether names has duplicates: " + hasDuplicates(names));
+
+        System.out.println("Names but reversed: " + revArrayList(names));
+
+        shiftLeft(names);
+        System.out.println("Names but shifted: " + names);
     }
 
     /**
@@ -150,7 +157,14 @@ public class Notes_7_4_Examples {
      * @return true if any values are repeated, false otherwise
      */
     public static boolean hasDuplicates(ArrayList<String> list) {
-        return true;
+        for (int j = 0; j < list.size() - 1; j++){
+            for (int i = j + 1; i < list.size(); i++){
+                if (list.get(j).equals(list.get(i))){
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     /**
@@ -160,7 +174,11 @@ public class Notes_7_4_Examples {
      * @return new ArrayList of Strings in reverse order
      */
     public static ArrayList<String> revArrayList(ArrayList<String> list) {
-        return list;
+        ArrayList<String> revList = new ArrayList<>();
+        for (int i = list.size() - 1; i >= 0; i--){
+            revList.add(list.get(i));
+        }
+        return revList;
     }
 
     /**
@@ -169,7 +187,7 @@ public class Notes_7_4_Examples {
      * @param list
      */
     public static void shiftLeft(ArrayList<String> list) {
-
+        list.add(list.remove(0));
     }
 
 

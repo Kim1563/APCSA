@@ -34,16 +34,16 @@ public class TicketMasterDriver {
         boolean flag = true;
         while (flag){
             try {
-                System.out.print("Enter an integer from 1-6: ");
+                System.out.print("\nEnter an integer from 0-6: ");
                 int input = in.nextInt();
-                if (input >= 1 && input <= 6){
-                    flag = false;
+                System.out.println("");
+                if (input >= 0 && input <= 6){
                     if (input == 6){
                         System.out.println("Thanks for using TicketMaster");
                         System.exit(420);
                     } else {
-                        process(input, shows);
-                        System.out.println(ticketMaster.toString());
+                        ticketMaster.setShows(process(input, shows));
+                        System.out.println(ticketMaster);
                     }
                 } else {
                     System.out.println("Out of range");
@@ -55,19 +55,33 @@ public class TicketMasterDriver {
                 in.nextLine();
             }
             catch (Exception e){
-                System.out.println("An unexpected error led to an exception, please try again");
+                System.out.println("An unexpected error led to an exception, " + e + ", please try again");
                 in.nextLine();
             }
         }
 
     }
 
-    public static void process(int status, ArrayList<Show> shows){
-        if (status == 1){
-            Show temp = shows.get(0);
+    public static ArrayList<Show> process(int status, ArrayList<Show> shows){
+        ArrayList<Show> returnList = shows;
+        if (status == 0){
             for (Show s : shows){
-                if (temp.getcompareTo(s))
+                returnList.add(s);
             }
         }
+        if (status == 1){
+            Show temp = shows.get(0);
+            for (int i = 1; i < returnList.size(); i++){
+                if (temp.getPerformer().compareTo(shows.get(i).getPerformer()) < 0){
+                    returnList.add(temp);
+                    temp = shows.get(i);
+                } else {
+                    returnList.add(shows.get(i));
+                    temp = shows.get(i);
+                }
+            }
+        }
+        return returnList;
     }
+
 }

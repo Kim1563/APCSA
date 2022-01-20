@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f574b653-4512-43b8-b410-3a014efdaa52" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/Unit7_ArrayList/examples/Notes_7_4_Examples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMasterDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMasterDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/lab/TicketMasterDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/lab/TicketMasterDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/showData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/showData.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -57,19 +63,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.TicketMasterDriver">
-    <configuration name="FileReadExampleContinued" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit6_Arrays.examples.FileReadExampleContinued" />
-      <module name="APCSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unit6_Arrays.examples.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Notes_7_3_Examples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.Notes_7_3_Examples" />
       <module name="APCSA" />
@@ -85,6 +78,19 @@
     </configuration>
     <configuration name="Notes_7_3_TryCatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.Notes_7_3_TryCatch" />
+      <module name="APCSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit7_ArrayList.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Notes_7_4_Examples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.Notes_7_4_Examples" />
       <module name="APCSA" />
       <extension name="coverage">
         <pattern>
@@ -125,10 +131,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TicketMasterDriver" />
+        <item itemvalue="Application.Notes_7_4_Examples" />
         <item itemvalue="Application.Notes_7_3_TryCatch" />
         <item itemvalue="Application.Notes_7_3_Examples" />
         <item itemvalue="Application.TriviaDriver" />
-        <item itemvalue="Application.FileReadExampleContinued" />
       </list>
     </recent_temporary>
   </component>
