@@ -4,10 +4,12 @@ import java.io.FileNotFoundException;
 import java.util.*;
 
 public class TicketMasterDriver {
+    static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args) throws FileNotFoundException {
         ArrayList<Show> shows = new ArrayList<>();
         TicketMaster ticketMaster = new TicketMaster(shows);
-        Scanner in = new Scanner(System.in);
+
 
         System.out.println("Welcome to the TicketMaster Console");
         System.out.println("======================================");
@@ -36,7 +38,6 @@ public class TicketMasterDriver {
             try {
                 System.out.print("\nEnter an integer from 0-6: ");
                 int input = in.nextInt();
-                System.out.println("");
                 if (input >= 0 && input <= 6){
                     if (input == 6){
                         System.out.println("Thanks for using TicketMaster");
@@ -64,12 +65,19 @@ public class TicketMasterDriver {
 
     public static ArrayList<Show> process(int status, ArrayList<Show> shows){
         ArrayList<Show> returnList = shows;
-        if (status == 0){
-            for (Show s : shows){
+        if (status == 0) {
+            for (Show s : shows) {
                 returnList.add(s);
             }
-        }
-        if (status == 1){
+        } else if (status == 1) {
+            System.out.print("Enter the desired city: ");
+            String city = in.next();
+            for (int i = returnList.size() - 1; i >= 0; i--) {
+                if (!returnList.get(i).getCity().equalsIgnoreCase(city)) {
+                    returnList.remove(returnList.get(i));
+                }
+            }
+        } else if (status == 2){
             Show temp = shows.get(0);
             for (int i = 1; i < returnList.size(); i++){
                 if (temp.getPerformer().compareTo(shows.get(i).getPerformer()) < 0){
