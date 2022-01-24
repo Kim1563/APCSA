@@ -5,39 +5,32 @@ import java.util.*;
 
 public class TicketMasterDriver {
     static Scanner in = new Scanner(System.in);
+    static ArrayList<Show> shows = new ArrayList<>();
 
     public static void main(String[] args) throws FileNotFoundException {
-        ArrayList<Show> shows = new ArrayList<>();
+
         TicketMaster ticketMaster = new TicketMaster(shows);
+        ticketMaster.addShows();
 
 
         System.out.println("Welcome to the TicketMaster Console");
         System.out.println("======================================");
         System.out.println("In the following prompt, type an integer from 0-6 to view the available tickets:");
         System.out.println("\t\t(0) View all tickets (not alphabetical)");
-        System.out.println("\t\t(1) View all tickets (ordered A-Z)");
-        System.out.println("\t\t(2) View all tickets (ordered Z-A)");
-        System.out.println("\t\t(3) View all tickets (sorted by price - low to high)");
-        System.out.println("\t\t(4) View all tickets (sorted by price - high to low)");
-        System.out.println("\t\t(5) Search by location");
+        System.out.println("\t\t(1) Search by location");
+        System.out.println("\t\t(2) View all tickets (ordered A-Z)");
+        System.out.println("\t\t(3) View all tickets (ordered Z-A)");
+        System.out.println("\t\t(4) View all tickets (sorted by price - low to high)");
+        System.out.println("\t\t(5) View all tickets (sorted by price - high to low)");
         System.out.println("\t\t(6) Exit TicketMaster");
         System.out.println();
-
-        try {
-            ticketMaster.addShows();
-        }
-        catch (FileNotFoundException e){
-            System.out.println("File not found");
-        }
-        catch (Exception e){
-            System.out.println("An error caused an exception");
-        }
 
         boolean flag = true;
         while (flag){
             try {
                 System.out.print("\nEnter an integer from 0-6: ");
                 int input = in.nextInt();
+                in.nextLine();
                 if (input >= 0 && input <= 6){
                     if (input == 6){
                         System.out.println("Thanks for using TicketMaster");
@@ -66,9 +59,7 @@ public class TicketMasterDriver {
     public static ArrayList<Show> process(int status, ArrayList<Show> shows){
         ArrayList<Show> returnList = shows;
         if (status == 0) {
-            for (Show s : shows) {
-                returnList.add(s);
-            }
+            return returnList;
         } else if (status == 1) {
             System.out.print("Enter the desired city: ");
             String city = in.next();
@@ -77,6 +68,8 @@ public class TicketMasterDriver {
                     returnList.remove(returnList.get(i));
                 }
             }
+            in.nextLine();
+            return returnList;
         } else if (status == 2){
             Show temp = shows.get(0);
             for (int i = 1; i < returnList.size(); i++){
