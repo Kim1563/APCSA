@@ -9,10 +9,10 @@ public class TicketMaster {
 
     Scanner inFile = new Scanner(new File("showData.txt"));
 
-    private ArrayList<Show> shows = new ArrayList<>();
+    private ArrayList<Show> shows;
 
-    public TicketMaster(ArrayList<Show> shows) throws FileNotFoundException {
-        this.shows = shows;
+    public TicketMaster() throws FileNotFoundException {
+        this.shows = new ArrayList<>();
     }
 
     public ArrayList<Show> getShows() {
@@ -33,15 +33,7 @@ public class TicketMaster {
         return output;
     }
 
-    public void searchCity(String target){
-        for (int i = shows.size(); i >= 0; i--){
-            if (!shows.get(i).getCity().equals(target)){
-                shows.remove(i);
-            }
-        }
-    }
-
-    public void addShows() throws FileNotFoundException {
+    public void addShows() {
         while (inFile.hasNext()){
             String date = inFile.next();
 
@@ -58,5 +50,6 @@ public class TicketMaster {
 
             inFile.nextLine();
         }
+        inFile.close();
     }
 }

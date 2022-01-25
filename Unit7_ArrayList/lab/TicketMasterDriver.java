@@ -5,13 +5,11 @@ import java.util.*;
 
 public class TicketMasterDriver {
     static Scanner in = new Scanner(System.in);
-    static ArrayList<Show> shows = new ArrayList<>();
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        TicketMaster ticketMaster = new TicketMaster(shows);
+        TicketMaster ticketMaster = new TicketMaster();
         ticketMaster.addShows();
-
 
         System.out.println("Welcome to the TicketMaster Console");
         System.out.println("======================================");
@@ -30,13 +28,12 @@ public class TicketMasterDriver {
             try {
                 System.out.print("\nEnter an integer from 0-6: ");
                 int input = in.nextInt();
-                in.nextLine();
                 if (input >= 0 && input <= 6){
                     if (input == 6){
                         System.out.println("Thanks for using TicketMaster");
                         System.exit(420);
                     } else {
-                        ticketMaster.setShows(process(input, shows));
+                        ticketMaster.setShows(process(input, ticketMaster.getShows()));
                         System.out.println(ticketMaster);
                     }
                 } else {
