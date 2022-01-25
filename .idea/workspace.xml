@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f574b653-4512-43b8-b410-3a014efdaa52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit7_ArrayList/examples/Notes_7_5/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit7_ArrayList/examples/Notes_7_5/Store.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit7_ArrayList/examples/Notes_7_5/StoreTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMaster.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMasterDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMasterDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/lab/TicketMasterDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/lab/TicketMasterDriver.class" afterDir="false" />
@@ -177,14 +175,9 @@
           <line>6</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMasterDriver.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMasterDriver.java</url>
-          <line>9</line>
+          <line>19</line>
           <properties class="Unit7_ArrayList.lab.TicketMasterDriver" method="main">
             <option name="EMULATED" value="true" />
           </properties>
@@ -192,7 +185,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMasterDriver.java</url>
-          <line>58</line>
+          <line>70</line>
           <properties class="Unit7_ArrayList.lab.TicketMasterDriver" method="process">
             <option name="EMULATED" value="true" />
           </properties>

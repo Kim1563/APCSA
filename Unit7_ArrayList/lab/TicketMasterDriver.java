@@ -7,9 +7,19 @@ public class TicketMasterDriver {
     static Scanner in = new Scanner(System.in);
     static ArrayList<Show> shows = new ArrayList<>();
 
+    static TicketMaster ticketMaster;
+
+    static {
+        try {
+            ticketMaster = new TicketMaster(shows);
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found");
+        }
+    }
+
     public static void main(String[] args) throws FileNotFoundException {
 
-        TicketMaster ticketMaster = new TicketMaster(shows);
+
         ticketMaster.addShows();
 
 
@@ -33,23 +43,25 @@ public class TicketMasterDriver {
                 in.nextLine();
                 if (input >= 0 && input <= 6){
                     if (input == 6){
-                        System.out.println("Thanks for using TicketMaster");
+                        System.out.println("\nThanks for using TicketMaster");
                         System.exit(420);
                     } else {
-                        ticketMaster.setShows(process(input, shows));
-                        System.out.println(ticketMaster);
+                        ArrayList<Show> temp = process(input, shows);
+                        System.out.println("\nDate\t\t\tPrice\t\tQty\t\t Performer\t\t\t\tCity\n---------------------------------------------------------------------------");
+                        for (Show s : temp){
+                            System.out.println(s);
+                        }
                     }
                 } else {
-                    System.out.println("Out of range");
-                    in.nextLine();
+                    System.out.println("\nOut of range");
                 }
             }
             catch (InputMismatchException e) {
-                System.out.println("Please provide an integer");
+                System.out.println("\nPlease provide an integer");
                 in.nextLine();
             }
             catch (Exception e){
-                System.out.println("An unexpected error led to an exception, " + e + ", please try again");
+                System.out.println("\nAn unexpected error led to an exception, " + e + ", please try again");
                 in.nextLine();
             }
         }
@@ -57,30 +69,20 @@ public class TicketMasterDriver {
     }
 
     public static ArrayList<Show> process(int status, ArrayList<Show> shows){
-        ArrayList<Show> returnList = shows;
+        ArrayList<Show> returnList = new ArrayList<>();
         if (status == 0) {
+            returnList = shows;
             return returnList;
-        } else if (status == 1) {
+        }
+        if (status == 1) {
             System.out.print("Enter the desired city: ");
-            String city = in.next();
-            for (int i = returnList.size() - 1; i >= 0; i--) {
-                if (!returnList.get(i).getCity().equalsIgnoreCase(city)) {
-                    returnList.remove(returnList.get(i));
-                }
-            }
-            in.nextLine();
+            String city = in.nextLine();
+            returnList = ticketMaster.searchCity(city);
             return returnList;
-        } else if (status == 2){
+        }
+        if (status == 2){
             Show temp = shows.get(0);
-            for (int i = 1; i < returnList.size(); i++){
-                if (temp.getPerformer().compareTo(shows.get(i).getPerformer()) < 0){
-                    returnList.add(temp);
-                    temp = shows.get(i);
-                } else {
-                    returnList.add(shows.get(i));
-                    temp = shows.get(i);
-                }
-            }
+            int index = 0;
         }
         return returnList;
     }

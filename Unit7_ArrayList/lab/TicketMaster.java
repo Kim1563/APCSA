@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class TicketMaster {
 
-    Scanner inFile = new Scanner(new File("showData.txt"));
+
 
     private ArrayList<Show> shows = new ArrayList<>();
 
@@ -33,16 +33,19 @@ public class TicketMaster {
         return output;
     }
 
-    public void searchCity(String target){
-        for (int i = shows.size(); i >= 0; i--){
-            if (!shows.get(i).getCity().equals(target)){
-                shows.remove(i);
+    public ArrayList<Show> searchCity(String target){
+        ArrayList<Show> returnList = new ArrayList<>();
+        for (Show s : shows) {
+            if (s.getCity().equals(target)) {
+                returnList.add(s);
             }
         }
+        return returnList;
     }
 
     public void addShows() throws FileNotFoundException {
-        while (inFile.hasNext()){
+        Scanner inFile = new Scanner(new File("showData.txt"));
+        while (inFile.hasNextLine()){
             String date = inFile.next();
 
             double price = inFile.nextDouble();
@@ -52,11 +55,10 @@ public class TicketMaster {
 
             String performer = temp.substring(0, temp.indexOf(","));
 
-            String city = temp.substring(temp.indexOf(",") + 1);
+            String city = temp.substring(temp.indexOf(",") + 2);
 
             shows.add(new Show(date, price, qty, performer, city));
 
-            inFile.nextLine();
         }
     }
 }
