@@ -44,11 +44,9 @@ public class TicketMaster {
 
             String performer = temp.substring(0, temp.indexOf(","));
 
-            String city = temp.substring(temp.indexOf(",") + 1);
+            String city = temp.substring(temp.indexOf(",") + 2);
 
             shows.add(new Show(date, price, qty, performer, city));
-
-            inFile.nextLine();
         }
         inFile.close();
     }
