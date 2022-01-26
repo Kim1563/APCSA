@@ -39,17 +39,12 @@ public class TicketMasterDriver {
                 int input = in.nextInt();
                 in.nextLine();
                 if (input >= 0 && input <= 6){
-                    if (input == 6){
-                        System.out.println("Thanks for using TicketMaster");
-                        System.exit(420);
-                    } else {
-                        ArrayList<Show> shows = new ArrayList<>();
-                        shows = process(input, ticketMaster.getShows());
+                    ArrayList<Show> shows = new ArrayList<>();
+                    shows = process(input, ticketMaster.getShows());
 
-                        System.out.println("Date\t\t\tPrice\t\tQty\t\t Performer\t\t\t\tCity\n---------------------------------------------------------------------------");
-                        for (Show s : shows){
-                            System.out.println(s.toString());
-                        }
+                    System.out.println("Date\t\t\tPrice\t\tQty\t\t Performer\t\t\t\tCity\n---------------------------------------------------------------------------");
+                    for (Show s : shows){
+                        System.out.println(s.toString());
                     }
                 } else {
                     System.out.println("\nOut of range");
@@ -89,6 +84,10 @@ public class TicketMasterDriver {
             System.out.println("\nSorted Z-A\n");
             ticketMaster.sortZA();
             return shows;
+        }
+        if (status == 6){
+            System.out.println("\nThanks for using TicketMaster");
+            System.exit(420);
         }
         return returnList;
     }
