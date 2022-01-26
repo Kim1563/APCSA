@@ -77,12 +77,18 @@ public class TicketMasterDriver {
             System.out.print("\nEnter the desired city: ");
             String city = in.nextLine();
             ArrayList<Show> temp = new ArrayList<>();
-            for (Show s : shows){
-                if (s.getCity().equals(city)){
-                    temp.add(s);
-                }
-            }
+            temp = ticketMaster.searchCity(city);
             return temp;
+        }
+        if (status == 2){
+            System.out.println("\nSorted A-Z\n");
+            ticketMaster.sortAZ();
+            return shows;
+        }
+        if (status == 3){
+            System.out.println("\nSorted Z-A\n");
+            ticketMaster.sortZA();
+            return shows;
         }
         return returnList;
     }

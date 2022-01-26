@@ -1,6 +1,7 @@
 package Unit7_ArrayList.lab;
 
 import java.io.FileNotFoundException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.io.File;
 import java.util.Scanner;
@@ -31,6 +32,45 @@ public class TicketMaster {
             output += s.toString();
         }
         return output;
+    }
+
+    public ArrayList<Show> searchCity(String city){
+        ArrayList<Show> temp = new ArrayList<>();
+        for (Show s : shows){
+            if (s.getCity().equals(city)){
+                temp.add(s);
+            }
+        }
+
+        return temp;
+    }
+
+    public void sortAZ(){
+        for (int i = 0; i < shows.size() - 1; i++){
+            int minIndex = i;
+            for (int j = i + 1; j < shows.size(); j++){
+                if (shows.get(j).getPerformer().compareTo(shows.get(minIndex).getPerformer()) < 0) {
+                    minIndex = j;
+                }
+            }
+            Show temp = shows.get(i);
+            shows.set(i, shows.get(minIndex));
+            shows.set(minIndex, temp);
+        }
+    }
+
+    public void sortZA(){
+        for (int i = 0; i < shows.size() - 1; i++){
+            int maxIndex = i;
+            for (int j = i + 1; j < shows.size(); j++){
+                if (shows.get(j).getPerformer().compareTo(shows.get(maxIndex).getPerformer()) > 0) {
+                    maxIndex = j;
+                }
+            }
+            Show temp = shows.get(i);
+            shows.set(i, shows.get(maxIndex));
+            shows.set(maxIndex, temp);
+        }
     }
 
     public void addShows() {
