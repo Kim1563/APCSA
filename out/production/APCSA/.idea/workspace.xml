@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f574b653-4512-43b8-b410-3a014efdaa52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit7_ArrayList/examples/InsertionSortExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMasterDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMasterDriver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +59,7 @@
       <recent name="C:\Users\kim1563\Documents\GitHub\APCSA" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TicketMasterDriver">
+  <component name="RunManager" selected="Application.InsertionSortExample">
     <configuration name="BinarySearchExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.Notes_7_5.BinarySearchExample" />
       <module name="APCSA" />
@@ -73,8 +73,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Notes_7_4_Examples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.Notes_7_4_Examples" />
+    <configuration name="InsertionSortExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.InsertionSortExample" />
       <module name="APCSA" />
       <extension name="coverage">
         <pattern>
@@ -127,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InsertionSortExample" />
         <item itemvalue="Application.TicketMasterDriver" />
         <item itemvalue="Application.SelectionSortExample" />
         <item itemvalue="Application.StoreTester" />
         <item itemvalue="Application.BinarySearchExample" />
-        <item itemvalue="Application.Notes_7_4_Examples" />
       </list>
     </recent_temporary>
   </component>
@@ -166,6 +166,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.util.IllegalFormatConversionException" package="java.util" />
           <option name="timeStamp" value="4" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.FileNotFoundException" package="java.io" />
+          <option name="timeStamp" value="23" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Unit7_ArrayList/examples/Notes_7_5/BinarySearchExample.java</url>

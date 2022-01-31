@@ -15,9 +15,7 @@ public class TicketMasterDriver {
         }
     }
 
-    public static void main(String[] args) throws FileNotFoundException{
-
-
+    public static void main(String[] args) throws FileNotFoundException {
         ticketMaster.addShows();
 
         System.out.println("Welcome to the TicketMaster Console");
