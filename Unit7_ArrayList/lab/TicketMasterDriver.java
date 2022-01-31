@@ -71,6 +71,10 @@ public class TicketMasterDriver {
             String city = in.nextLine();
             ArrayList<Show> temp = new ArrayList<>();
             temp = ticketMaster.searchCity(city);
+
+            if (temp.size() == 0){
+                System.out.println("\nUnfortunately, there are no shows in that city\n");
+            }
             return temp;
         }
         if (status == 2){
@@ -81,6 +85,16 @@ public class TicketMasterDriver {
         if (status == 3){
             System.out.println("\nSorted Z-A\n");
             ticketMaster.sortZA();
+            return shows;
+        }
+        if (status == 4){
+            System.out.println("\nSorted by Price (Expensive - Cheap)\n");
+            ticketMaster.sortExpensive();
+            return shows;
+        }
+        if (status == 5){
+            System.out.println("\nSorted by Price (Cheap - Expensive)\n");
+            ticketMaster.sortCheap();
             return shows;
         }
         if (status == 6){

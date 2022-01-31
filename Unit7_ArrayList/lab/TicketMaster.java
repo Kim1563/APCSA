@@ -73,6 +73,36 @@ public class TicketMaster {
         }
     }
 
+    public void sortExpensive(){
+        for (int i = 1; i < shows.size(); i++){
+            Show temp = shows.get(i);
+            double val = shows.get(i).getPrice();
+            int pos = i;
+
+            while (pos > 0 && shows.get(pos - 1).getPrice() < val){
+                shows.set(pos, shows.get(pos - 1));
+                pos--;
+            }
+
+            shows.set(pos, temp);
+        }
+    }
+
+    public void sortCheap(){
+        for (int i = 1; i < shows.size(); i++){
+            Show temp = shows.get(i);
+            double val = shows.get(i).getPrice();
+            int pos = i;
+
+            while (pos > 0 && shows.get(pos - 1).getPrice() > val){
+                shows.set(pos, shows.get(pos - 1));
+                pos--;
+            }
+
+            shows.set(pos, temp);
+        }
+    }
+
     public void addShows() {
         while (inFile.hasNext()){
             String date = inFile.next();

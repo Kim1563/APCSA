@@ -17,6 +17,17 @@ public class InsertionSortExample {
     }
 
     public static void insertionSort(ArrayList<Integer> list){
+        for (int i = 1; i < list.size(); i++){
 
+            int val = list.get(i); // Get the value to insert
+            int pos = i; // Get the index of the position at which val will be inserted
+
+            while (pos > 0 && list.get(pos - 1) > val){
+                list.set(pos, list.get(pos - 1)); // Shift the value next to val to the right while it's greater
+                pos--; // Decrement pos to continue checking
+            }
+
+            list.set(pos, val); // Inserts val at pos
+        }
     }
 }
