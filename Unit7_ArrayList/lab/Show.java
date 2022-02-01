@@ -57,7 +57,10 @@ public class Show {
         this.city = city;
     }
 
-    // Returns a formatted String for one Show
+    /**
+     * Returns formatted String for one Show object
+     * @return String with formatted date, price, quantity, performer
+     */
     public String toString(){
         String output = "";
 

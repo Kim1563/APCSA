@@ -24,6 +24,10 @@ public class TicketMaster {
         this.shows = shows;
     }
 
+    /**
+     * Return formatted String with the title and all shows as needed
+     * @return String with formatted Shows
+     */
     public String toString(){
         String output = "Date\t\t\tPrice\t\tQty\t\t Performer\t\t\t\tCity";
         output += "\n---------------------------------------------------------------------------";
