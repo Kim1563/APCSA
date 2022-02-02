@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f574b653-4512-43b8-b410-3a014efdaa52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Unit7_ArrayList/examples/BatteryCharger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit7_ArrayList/lab/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7_ArrayList/lab/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/lab/TicketMaster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/lab/TicketMaster.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/lab/TicketMasterDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/lab/TicketMasterDriver.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,12 +65,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.TicketMasterDriver">
-    <configuration name="BinarySearchExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.Notes_7_5.BinarySearchExample" />
+    <configuration name="BatteryCharger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.BatteryCharger" />
       <module name="APCSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit7_ArrayList.examples.Notes_7_5.*" />
+          <option name="PATTERN" value="Unit7_ArrayList.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,10 +133,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TicketMasterDriver" />
+        <item itemvalue="Application.BatteryCharger" />
         <item itemvalue="Application.InsertionSortExample" />
         <item itemvalue="Application.SelectionSortExample" />
         <item itemvalue="Application.StoreTester" />
-        <item itemvalue="Application.BinarySearchExample" />
       </list>
     </recent_temporary>
   </component>

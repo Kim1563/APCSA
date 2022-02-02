@@ -25,8 +25,8 @@ public class TicketMasterDriver {
         System.out.println("\t\t(1) Search by location");
         System.out.println("\t\t(2) View all tickets (ordered A-Z)");
         System.out.println("\t\t(3) View all tickets (ordered Z-A)");
-        System.out.println("\t\t(4) View all tickets (sorted by price - low to high)");
-        System.out.println("\t\t(5) View all tickets (sorted by price - high to low)");
+        System.out.println("\t\t(4) View all tickets (sorted by price - expensive to cheap)");
+        System.out.println("\t\t(5) View all tickets (sorted by price - cheap to expensive)");
         System.out.println("\t\t(6) Exit TicketMaster");
         System.out.println();
 
@@ -40,7 +40,9 @@ public class TicketMasterDriver {
                     ArrayList<Show> shows = new ArrayList<>();
                     shows = process(input, ticketMaster.getShows());
 
-                    System.out.println("Date\t\t\tPrice\t\tQty\t\t Performer\t\t\t\tCity\n---------------------------------------------------------------------------");
+                    if (shows.size() != 0) {
+                        System.out.println("Date\t\t\tPrice\t\tQty\t\t Performer\t\t\t\tCity\n---------------------------------------------------------------------------");
+                    }
                     for (Show s : shows){
                         System.out.println(s.toString());
                     }
