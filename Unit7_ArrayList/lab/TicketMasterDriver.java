@@ -15,6 +15,8 @@ public class TicketMasterDriver {
         }
     }
 
+    static int count = 0;
+
     public static void main(String[] args) throws FileNotFoundException {
         ticketMaster.addShows();
 
@@ -39,6 +41,7 @@ public class TicketMasterDriver {
                 if (input >= 0 && input <= 6){
                     ArrayList<Show> shows = new ArrayList<>();
                     shows = process(input, ticketMaster.getShows());
+                    count++;
 
                     if (shows.size() != 0) {
                         System.out.println("Date\t\t\tPrice\t\tQty\t\t Performer\t\t\t\tCity\n---------------------------------------------------------------------------");
@@ -101,6 +104,7 @@ public class TicketMasterDriver {
         }
         if (status == 6){
             System.out.println("\nThanks for using TicketMaster");
+            System.out.println("You used TicketMaster " + count + " times.");
             System.exit(420);
         }
         return returnList;
