@@ -38,6 +38,11 @@ public class TicketMaster {
         return output;
     }
 
+    /**
+     * Linear search to find city
+     * @param city String city inputted by user
+     * @return ArrayList with only shows with specified city
+     */
     public ArrayList<Show> searchCity(String city){
         ArrayList<Show> temp = new ArrayList<>();
         for (Show s : shows){
@@ -49,6 +54,9 @@ public class TicketMaster {
         return temp;
     }
 
+    /**
+     * Selection sort to sort the ArrayList alphabetically
+     */
     public void sortAZ(){
         for (int i = 0; i < shows.size() - 1; i++){
             int minIndex = i;
@@ -63,6 +71,9 @@ public class TicketMaster {
         }
     }
 
+    /**
+     * Selection sort to sort the ArrayList reverse alphabetically
+     */
     public void sortZA(){
         for (int i = 0; i < shows.size() - 1; i++){
             int maxIndex = i;
@@ -77,6 +88,9 @@ public class TicketMaster {
         }
     }
 
+    /**
+     * Insertion sort to sort from expensive to cheap
+     */
     public void sortExpensive(){
         for (int i = 1; i < shows.size(); i++){
             Show temp = shows.get(i);
@@ -92,6 +106,9 @@ public class TicketMaster {
         }
     }
 
+    /**
+     * Insertion sort to sort from cheap to expensive
+     */
     public void sortCheap(){
         for (int i = 1; i < shows.size(); i++){
             Show temp = shows.get(i);
@@ -107,6 +124,7 @@ public class TicketMaster {
         }
     }
 
+    // Reads file and adds Shows with information on the file
     public void addShows() {
         while (inFile.hasNext()){
             String date = inFile.next();
