@@ -45,7 +45,7 @@ public class TicketMaster {
     public ArrayList<Show> searchCity(String city){
         ArrayList<Show> temp = new ArrayList<>();
         for (Show s : shows){
-            if (s.getCity().equals(city)){
+            if (s.getCity().equalsIgnoreCase(city)){
                 temp.add(s);
             }
         }
