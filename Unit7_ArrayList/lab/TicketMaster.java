@@ -1,7 +1,6 @@
 package Unit7_ArrayList.lab;
 
 import java.io.FileNotFoundException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.io.File;
 import java.util.Scanner;
@@ -29,7 +28,7 @@ public class TicketMaster {
      * @return String with formatted Shows
      */
     public String toString(){
-        String output = "Date\t\t\tPrice\t\tQty\t\t Performer\t\t\t\tCity";
+        String output = "Date\t\t\tPrice\t\tQty\t\t Performer\t\t\t   City";
         output += "\n---------------------------------------------------------------------------";
         for (Show s : this.shows) {
             output += "\n";

@@ -30,8 +30,8 @@ public class TicketMasterDriver {
         System.out.println("\t\t(1) Search by location");
         System.out.println("\t\t(2) View all tickets (ordered A-Z)");
         System.out.println("\t\t(3) View all tickets (ordered Z-A)");
-        System.out.println("\t\t(4) View all tickets (sorted by price - expensive to cheap)");
-        System.out.println("\t\t(5) View all tickets (sorted by price - cheap to expensive)");
+        System.out.println("\t\t(4) View all tickets (sorted by price - cheap to expensive)");
+        System.out.println("\t\t(5) View all tickets (sorted by price - expensive to cheap)");
         System.out.println("\t\t(6) Exit TicketMaster");
         System.out.println();
 
@@ -53,7 +53,7 @@ public class TicketMasterDriver {
 
                     // Checks if there are no shows after processing and prints formatted Shows
                     if (shows.size() != 0) {
-                        System.out.println("Date\t\t\tPrice\t\tQty\t\t Performer\t\t\t\tCity\n---------------------------------------------------------------------------");
+                        System.out.println("Date\t\t\tPrice\t\tQty\t\t Performer\t\t\t   City\n---------------------------------------------------------------------------");
                     }
                     for (Show s : shows){
                         System.out.println(s.toString());
@@ -89,7 +89,7 @@ public class TicketMasterDriver {
 
             // If there are no shows in specified city, prints a message
             if (temp.size() == 0){
-                System.out.println("\nUnfortunately, there are no shows in that city\n");
+                System.out.println("\nUnfortunately, there are no shows in that city");
             }
             return temp;
         }
@@ -104,13 +104,13 @@ public class TicketMasterDriver {
             return shows;
         }
         if (status == 4){
-            System.out.println("\nSorted by Price (Expensive - Cheap)\n");
-            ticketMaster.sortExpensive();
+            System.out.println("\nSorted by Price (Cheap - Expensive)\n");
+            ticketMaster.sortCheap();
             return shows;
         }
         if (status == 5){
-            System.out.println("\nSorted by Price (Cheap - Expensive)\n");
-            ticketMaster.sortCheap();
+            System.out.println("\nSorted by Price (Expensive - Cheap)\n");
+            ticketMaster.sortExpensive();
             return shows;
         }
 
