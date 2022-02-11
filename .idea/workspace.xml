@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f574b653-4512-43b8-b410-3a014efdaa52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/lab/TicketMaster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/lab/TicketMaster.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit8_2dArrays/examples/Notes_8_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMasterDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7_ArrayList/lab/TicketMasterDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/lab/TicketMasterDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/lab/TicketMasterDriver.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +58,12 @@
       <recent name="C:\Users\kim1563\Documents\GitHub\APCSA\Unit3_BooleansAndConditionals\homework" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kim1563\Documents\GitHub\APCSA\Unit8_2dArrays\examples" />
       <recent name="C:\Users\kim1563\Documents\GitHub\APCSA\Unit7_ArrayList\examples\Notes_7_5" />
       <recent name="C:\Users\kim1563\Documents\GitHub\APCSA" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TicketMasterDriver">
+  <component name="RunManager" selected="Application.Notes_8_1">
     <configuration name="BatteryCharger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.BatteryCharger" />
       <module name="APCSA" />
@@ -85,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectionSortExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.SelectionSortExample" />
+    <configuration name="Notes_8_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit8_2dArrays.examples.Notes_8_1" />
       <module name="APCSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit7_ArrayList.examples.*" />
+          <option name="PATTERN" value="Unit8_2dArrays.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StoreTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.Notes_7_5.StoreTester" />
+    <configuration name="SelectionSortExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.SelectionSortExample" />
       <module name="APCSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit7_ArrayList.examples.Notes_7_5.*" />
+          <option name="PATTERN" value="Unit7_ArrayList.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Notes_8_1" />
         <item itemvalue="Application.TicketMasterDriver" />
         <item itemvalue="Application.BatteryCharger" />
         <item itemvalue="Application.InsertionSortExample" />
         <item itemvalue="Application.SelectionSortExample" />
-        <item itemvalue="Application.StoreTester" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +208,9 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/APCSA$TicketMasterDriver.ic" NAME="TicketMasterDriver Coverage Results" MODIFIED="1644340886889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Unit7_ArrayList.lab.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/APCSA$Tester.ic" NAME="Tester Coverage Results" MODIFIED="1634573991477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

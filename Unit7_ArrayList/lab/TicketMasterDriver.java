@@ -118,6 +118,7 @@ public class TicketMasterDriver {
         if (status == 6){
             System.out.println("\nThanks for using TicketMaster");
             System.out.println("You used TicketMaster " + count + " times.");
+            in.close();
             System.exit(420);
         }
         return returnList;
