@@ -35,10 +35,10 @@ public class DumbDenna_8_2 {
 
     public static boolean isFound(String[][] arr, String word) {
         for (String[] row: arr) {
-          for (String s: row) {
-              if (s.equals(word)) {
+            for (String s: row) {
+                if (s.equals(word)) {
                   return true;
-              }
+                }
             }
         }
         return false;
