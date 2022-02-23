@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f574b653-4512-43b8-b410-3a014efdaa52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit8_2dArrays/examples/MethodWritingPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit8_2dArrays/examples/ClassExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit8_2dArrays/examples/DumbDenna_8_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit8_2dArrays/examples/DumbDenna_8_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,13 +61,13 @@
       <recent name="C:\Users\kim1563\Documents\GitHub\APCSA" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MethodWritingPractice">
-    <configuration name="BatteryCharger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.BatteryCharger" />
+  <component name="RunManager" selected="Application.ClassExample">
+    <configuration name="ClassExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit8_2dArrays.examples.ClassExample" />
       <module name="APCSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit7_ArrayList.examples.*" />
+          <option name="PATTERN" value="Unit8_2dArrays.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClassExample" />
         <item itemvalue="Application.MethodWritingPractice" />
         <item itemvalue="Application.DumbDenna_8_2" />
         <item itemvalue="Application.Notes_8_1" />
         <item itemvalue="Application.TicketMasterDriver" />
-        <item itemvalue="Application.BatteryCharger" />
       </list>
     </recent_temporary>
   </component>
