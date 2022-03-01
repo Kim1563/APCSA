@@ -2,13 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f574b653-4512-43b8-b410-3a014efdaa52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit9_Inheritance/homework/Athlete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit9_Inheritance/homework/TeamAthlete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit9_Inheritance/examples/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit9_Inheritance/examples/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit9_Inheritance/examples/Drink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit9_Inheritance/examples/Entree.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit9_Inheritance/examples/Entree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit9_Inheritance/examples/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit9_Inheritance/examples/MenuItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit9_Inheritance/examples/MenuTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit9_Inheritance/examples/MenuTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit1_PrimitiveTypes/examples/Day1Examples.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit1_PrimitiveTypes/examples/Day1Examples.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/PracticeQuiz/Toy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/PracticeQuiz/Toy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/PracticeQuiz/ToyTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/PracticeQuiz/ToyTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/Quiz/Quiz.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/Quiz/Quiz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/Quiz/QuizDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/Quiz/QuizDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/CarTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/CarTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/Influencer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/Influencer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/InfluencerTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/InfluencerTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/StringExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/StringExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/StudentClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/StudentClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/WrapperClassExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/examples/WrapperClassExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/homework/WS1/Fruit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/homework/WS1/Fruit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/homework/WS1/FruitTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/homework/WS1/FruitTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/homework/WS1/Shoe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/homework/WS1/Shoe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/homework/WS1/ShoeTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit2_UsingObjects/homework/WS1/ShoeTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/examples/CompoundBooleanExamples.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/examples/CompoundBooleanExamples.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/examples/Pizza.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/examples/Pizza.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/examples/PizzaTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/examples/PizzaTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/examples/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/examples/Review.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/examples/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/examples/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/examples/StudentDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/examples/StudentDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/homework/Chevy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/homework/Chevy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/homework/ChevyDriverStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/homework/ChevyDriverStudent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/homework/ReviewTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit3_BooleansAndConditionals/homework/ReviewTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit4_Iteration/examples/ForLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit4_Iteration/examples/ForLoop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit4_Iteration/examples/GuessNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit4_Iteration/examples/GuessNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit4_Iteration/examples/StringAlgorithms.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit4_Iteration/examples/StringAlgorithms.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit4_Iteration/examples/WhileLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit4_Iteration/examples/WhileLoop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit4_Iteration/homework/ChallengingLoops_4_5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit4_Iteration/homework/ChallengingLoops_4_5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit4_Iteration/lab/PigLatin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit4_Iteration/lab/PigLatin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit4_Iteration/lab/PigLatinTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit4_Iteration/lab/PigLatinTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/examples/Documentation/DocEx.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/examples/Documentation/DocEx.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/examples/HeroVillainExample/MarvelMovieTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/examples/HeroVillainExample/MarvelMovieTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/examples/HeroVillainExample/Power.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/examples/HeroVillainExample/Power.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/examples/HeroVillainExample/SuperHero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/examples/HeroVillainExample/SuperHero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/examples/HeroVillainExample/Villain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/examples/HeroVillainExample/Villain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/FRQs/AdditionPattern.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/FRQs/AdditionPattern.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/FRQs/AdditionPatternTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/FRQs/AdditionPatternTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/FRQs/HiddenWord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/FRQs/HiddenWord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/PartnerProject/Grade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/PartnerProject/Grade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/PartnerProject/Names.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/PartnerProject/Names.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/PartnerProject/Parent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/PartnerProject/Parent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/PartnerProject/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/PartnerProject/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/PartnerProject/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/PartnerProject/Teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/PartnerProject/Tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit5_Classes/homework/PartnerProject/Tester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit6_Arrays/lab/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit6_Arrays/lab/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit6_Arrays/lab/TriviaDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit6_Arrays/lab/TriviaDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit6_Arrays/lab/TriviaGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit6_Arrays/lab/TriviaGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/examples/Notes_7_3_Examples.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/examples/Notes_7_3_Examples.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/examples/Notes_7_3_TryCatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/examples/Notes_7_3_TryCatch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/examples/Notes_7_4_Examples.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/examples/Notes_7_4_Examples.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/examples/Notes_7_5/BinarySearchExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/examples/Notes_7_5/BinarySearchExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/examples/Notes_7_5/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/examples/Notes_7_5/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/examples/Notes_7_5/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/examples/Notes_7_5/Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/examples/Notes_7_5/StoreTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit7_ArrayList/examples/Notes_7_5/StoreTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit8_2dArrays/examples/ClassExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit8_2dArrays/examples/ClassExample.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="ExportToHTMLSettings">
     <option name="printScope" value="1" />
@@ -36,6 +104,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$PROJECT_DIR$/../../../../../Program Files/Java/jdk1.8.0_251/src.zip!/java/util/Scanner.java" root0="SKIP_INSPECTION" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1yBTUJqhq9JlwAIjeIAw4xHKLaN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -47,7 +118,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -55,12 +126,13 @@
       <recent name="C:\Users\kim1563\Documents\GitHub\APCSA\Unit3_BooleansAndConditionals\homework" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kim1563\Documents\GitHub\APCSA\Unit9_Inheritance\examples" />
       <recent name="C:\Users\kim1563\Documents\GitHub\APCSA\Unit8_2dArrays\examples" />
       <recent name="C:\Users\kim1563\Documents\GitHub\APCSA\Unit7_ArrayList\examples\Notes_7_5" />
       <recent name="C:\Users\kim1563\Documents\GitHub\APCSA" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ClassExample">
+  <component name="RunManager" selected="Application.MenuTester">
     <configuration name="ClassExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit8_2dArrays.examples.ClassExample" />
       <module name="APCSA" />
@@ -80,6 +152,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Unit8_2dArrays.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit9_Inheritance.examples.MenuTester" />
+      <module name="APCSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit9_Inheritance.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,26 +198,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicketMasterDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.lab.TicketMasterDriver" />
-      <module name="APCSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unit7_ArrayList.lab.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MenuTester" />
         <item itemvalue="Application.ClassExample" />
         <item itemvalue="Application.MethodWritingPractice" />
         <item itemvalue="Application.DumbDenna_8_2" />
         <item itemvalue="Application.Notes_8_1" />
-        <item itemvalue="Application.TicketMasterDriver" />
       </list>
     </recent_temporary>
   </component>

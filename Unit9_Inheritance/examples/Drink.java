@@ -23,4 +23,9 @@ public class Drink extends MenuItem{
         }
     }
 
+    @Override
+    public String toString(){
+        String output = "Drink (" + this.numOz + " oz): " + super.getName();
+        return output;
+    }
 }
