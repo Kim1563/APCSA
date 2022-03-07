@@ -1,0 +1,25 @@
+package Unit9_Inheritance.examples;
+
+public class Animal
+{
+    private String name;
+
+    public Animal(String name)
+    {
+        this.name = name;
+    }
+
+    /**
+     * Makes a sound for the specific animal type
+     *
+     */
+    public void speak()
+    {
+        System.out.println("The Animal " + name + " makes a sound.");
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+}
