@@ -80,7 +80,7 @@ public class WorkoutPlan {
 
         for (int i = 0; i < workouts.length; i++) {
             output += "*** Week #" + i + " ***\n";
-            output += "WORKOUT NUM\t\tNAME\t\tMINUTES";
+            output += "WORKOUT NUM\t\tNAME\t\tMINUTES\n";
 
             for (Workout w : workouts[i]){
                 output += w.toString();
