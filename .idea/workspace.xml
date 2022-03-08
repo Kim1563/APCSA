@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f574b653-4512-43b8-b410-3a014efdaa52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit9_Inheritance/examples/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit9_Inheritance/examples/AnimalTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit9_Inheritance/examples/Cow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit9_Inheritance/examples/Pig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit9_Inheritance/lab/Cardio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit9_Inheritance/lab/Strength.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit9_Inheritance/lab/Wellness.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit9_Inheritance/lab/Workout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit9_Inheritance/lab/WorkoutPlan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
