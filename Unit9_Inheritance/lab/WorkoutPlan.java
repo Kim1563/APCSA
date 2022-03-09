@@ -79,7 +79,7 @@ public class WorkoutPlan {
         String output = "";
 
         for (int i = 0; i < workouts.length; i++) {
-            output += "*** Week #" + i + " ***\n";
+            output += "*** Week #" + (i + 1) + " ***\n";
             output += "WORKOUT NUM\t\tNAME\t\tMINUTES\n";
 
             for (Workout w : workouts[i]){

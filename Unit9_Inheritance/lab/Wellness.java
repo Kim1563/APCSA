@@ -31,7 +31,7 @@ public class Wellness extends Workout{
      */
     public String toString(){
         String output = "";
-        output += "Workout #" + super.getWorkoutNumber() + "\t\tStretching\t\t" + super.getDuration();
+        output += "Workout #" + super.getWorkoutNumber() + "\t\tStretching\t" + super.getDuration();
 
         return output;
     }

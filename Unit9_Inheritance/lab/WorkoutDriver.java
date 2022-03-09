@@ -14,18 +14,26 @@ public class WorkoutDriver {
         System.out.println("************************************************");
         System.out.println();
 
-        try {
-            System.out.println("How many weeks would you like to schedule?");
-            numWeeks = in.nextInt();
-            while (numWeeks <= 0){
-                System.out.println("\nPlease make sure you have more than 0 weeks in your schedule!");
+        boolean flag1 = true;
+
+        while (flag1) {
+            try {
                 System.out.println("\nHow many weeks would you like to schedule?");
                 numWeeks = in.nextInt();
+                in.nextLine();
+                if (numWeeks < 1){
+                    System.out.println("Please make sure you have at least one week!");
+                } else {
+                    flag1 = false;
+                    break;
+                }
+            } catch(InputMismatchException e){
+                System.out.println("Please try again, enter a valid integer:");
+                in.nextLine();
+            } catch(Exception e){
+                System.out.println("An unexpected exception led to an error. Please try again");
+                in.nextLine();
             }
-        } catch (InputMismatchException e){
-            System.out.println("Please try again, enter a valid integer:");
-        } catch (Exception e){
-            System.out.println("An unexpected exception led to an error. Please try again");
         }
 
         System.out.println("\nGreat, let's take a look at your " + numWeeks + " week schedule!\n");
@@ -33,6 +41,30 @@ public class WorkoutDriver {
         WorkoutPlan workoutPlan = new WorkoutPlan(numWeeks);
 
         System.out.println(workoutPlan);
+
+        System.out.println("Time to start working out!\n");
+
+        for (int i = 0; i < workoutPlan.getWorkouts().length; i++) {
+            boolean flag2 = true;
+            while (flag2) {
+                try {
+                    System.out.println("Type \"Start\" to to complete one week of workouts:");
+                    String userReady = in.nextLine();
+                    if (!userReady.equalsIgnoreCase("Start")) {
+                        System.out.println("Not ready? Don't worry, you've got this!");
+                    } else {
+                        flag2 = false;
+                        break;
+                    }
+                } catch (InputMismatchException e) {
+                    System.out.println("Please type a valid message!");
+                    in.nextLine();
+                } catch (Exception e) {
+                    System.out.println("An unexpected exception led to an error. Please try again");
+                    in.nextLine();
+                }
+            }
+        }
     }
 
 }

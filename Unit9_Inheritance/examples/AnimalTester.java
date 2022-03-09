@@ -29,6 +29,12 @@ public class AnimalTester
         // 3. What method is getting called here?  The speak method of the Animal class?
 
         // Specialized speak method depending on hierarchy (Cow, Pig or Animal depending on how specific the method is)
+
+        Animal myAnimal = new Cow("Bruh", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+
+        Cow cowow = (Cow) myAnimal;
+        cowow.milk();
+
     }
 
 }
