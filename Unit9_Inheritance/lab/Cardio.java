@@ -6,7 +6,7 @@ public class Cardio extends Workout{
     public Cardio(String name, int workoutNumber, int duration, double speed) {
         super(name, workoutNumber, duration);
         this.speed = speed;
-        this.distance = speed * duration;
+        this.distance = speed * (double) duration / 60;
     }
 
     public double getDistance() {

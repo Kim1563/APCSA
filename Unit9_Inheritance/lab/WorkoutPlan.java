@@ -10,7 +10,7 @@ public class WorkoutPlan {
         this.workouts = makePlan(numWeeks);
         this.numWorkoutsCompleted = 0;
         this.numWorkoutsSkipped = 0;
-        this.currentWorkoutWeek = 1;
+        this.currentWorkoutWeek = 0;
         this.totalCalsBurned = 0;
         this.totalMinsExercise = 0;
     }
@@ -96,7 +96,7 @@ public class WorkoutPlan {
      * Displays skipped workouts and updates instance variables
      */
     public void workoutNextWeek(){
-        System.out.println("Skipped Workouts: ");
+        System.out.println("\nSkipped Workouts: ");
         for (Workout w : workouts[this.getCurrentWorkoutWeek()]){
             int randNum = (int)(Math.random() * 5) + 1;
             if (randNum == 1){
@@ -115,10 +115,9 @@ public class WorkoutPlan {
      * Prints formatted progress (all data for the week)
      */
     public void printProgress(){
-        System.out.println("*** CURRENT PROGRESS ***");
-        System.out.println("Number of workouts completed:\t\t\t" + this.numWorkoutsCompleted);
-        System.out.println("Number of workouts skipped:\t\t\t" + this.numWorkoutsSkipped);
-        System.out.println("Total minutes of exercise:\t\t\t" + this.totalMinsExercise);
+        System.out.println("Number of workouts completed:\t" + this.numWorkoutsCompleted);
+        System.out.println("Number of workouts skipped:\t\t" + this.numWorkoutsSkipped);
+        System.out.println("Total minutes of exercise:\t\t" + this.totalMinsExercise);
         System.out.println("Total calories burned:\t\t\t" + this.totalCalsBurned);
     }
 

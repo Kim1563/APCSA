@@ -48,13 +48,12 @@ public class WorkoutDriver {
             boolean flag2 = true;
             while (flag2) {
                 try {
-                    System.out.println("Type \"Start\" to to complete one week of workouts:");
+                    System.out.println("\nType \"Start\" to to complete one week of workouts:");
                     String userReady = in.nextLine();
                     if (!userReady.equalsIgnoreCase("Start")) {
-                        System.out.println("Not ready? Don't worry, you've got this!");
+                        System.out.println("\nNot ready? Don't worry, you've got this!");
                     } else {
                         flag2 = false;
-                        break;
                     }
                 } catch (InputMismatchException e) {
                     System.out.println("Please type a valid message!");
@@ -64,7 +63,24 @@ public class WorkoutDriver {
                     in.nextLine();
                 }
             }
+
+            if (workoutPlan.getCurrentWorkoutWeek() < workoutPlan.getWorkouts().length - 1) {
+                workoutPlan.workoutNextWeek();
+                System.out.println("\n*** CURRENT PROGRESS ***");
+                workoutPlan.printProgress();
+            } else {
+                workoutPlan.workoutNextWeek();
+                System.out.println("\n*** CONGRATULATIONS ***");
+                System.out.println("You have completed your " + workoutPlan.getWorkouts().length + " week program!");
+                System.out.println("Here is a summary of your entire plan:\n");
+                workoutPlan.printProgress();
+                System.out.println("\nWe hope you continue to progress towards your fitness goals");
+
+                System.exit(420);
+            }
         }
+
+
     }
 
 }
