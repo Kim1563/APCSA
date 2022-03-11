@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f574b653-4512-43b8-b410-3a014efdaa52" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit9_Inheritance/lab/Cardio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit9_Inheritance/lab/Cardio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit9_Inheritance/lab/WorkoutDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit9_Inheritance/lab/WorkoutDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit9_Inheritance/lab/WorkoutPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit9_Inheritance/lab/WorkoutPlan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit9_Inheritance/lab/WorkoutDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit9_Inheritance/lab/WorkoutDriver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/APCSA/Unit9_Inheritance/lab/WorkoutPlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APCSA/Unit9_Inheritance/lab/WorkoutPlan.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
