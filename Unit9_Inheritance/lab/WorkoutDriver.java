@@ -16,7 +16,8 @@ public class WorkoutDriver {
 
         boolean flag1 = true;
 
-        while (flag1) {
+        // Runs loop and keeps trying inputs until valid input added
+        do{
             try {
                 System.out.println("\nHow many weeks would you like to schedule?");
                 numWeeks = in.nextInt();
@@ -34,7 +35,8 @@ public class WorkoutDriver {
                 System.out.println("An unexpected exception led to an error. Please try again");
                 in.nextLine();
             }
-        }
+        } while (flag1);
+
 
         System.out.println("\nGreat, let's take a look at your " + numWeeks + " week schedule!\n");
 
@@ -79,7 +81,6 @@ public class WorkoutDriver {
                 System.exit(420);
             }
         }
-
 
     }
 
